@@ -8,47 +8,32 @@ import {
 } from "../../config/Global";
 
 interface Props extends IBase, IBadge, IGlobal {
-  href?: string;
+  href?: string | undefined;
 }
 
 const Badge: FC<Props> = (props: Props): JSX.Element => {
-  const { children, bg, pill, link, href } = props;
+  const { children, bg, pill, as, href } = props;
 
   const styles = [];
 
   styles.push(...CreateBaseStyles(props));
   styles.push("badge");
-  if (pill) {
-    styles.push("badge-pill");
-  }
-  if (bg) {
-    styles.push(`badge-${bg}`);
-  }
+  styles.push(pill ? "badge-pill" : undefined);
+  styles.push(bg ? `badge-${bg}` : undefined);
   styles.push(...CreateGlobalStyles(props));
 
-  if (link) {
-    return React.createElement(
-      "a",
-      {
-        className: styles.join(" "),
-        href,
-      },
-      children
-    );
-  }
-  return React.createElement(
-    "span",
-    {
-      className: styles.join(" "),
-    },
-    children
-  );
+  const element = as !== undefined ? as : "span";
+  const attribute = {
+    className: styles.filter((x) => x !== undefined).join(" "),
+    href: as === "a" ? href : undefined,
+  };
+
+  return React.createElement(element, attribute, children);
 };
 
 Badge.defaultProps = {
   ...BaseDefaultProps,
   ...BadgeDefaultProps,
-  href: "index.html",
   ...GlobalDefaultProps,
 };
 

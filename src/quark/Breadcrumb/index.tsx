@@ -8,25 +8,31 @@ import {
 
 interface Props extends IBase, IGlobal {}
 
-const AlertHeading: FC<Props> = (props: Props): JSX.Element => {
+const Breadcrumb: FC<Props> = (props: Props): JSX.Element => {
   const { children } = props;
   const styles = [];
 
   styles.push(...CreateBaseStyles(props));
-  styles.push("alert-heading");
+  styles.push("breadcrumb");
   styles.push(...CreateGlobalStyles(props));
 
-  const element = "h4";
+  const element = "ol";
   const attribute = {
     className: styles.filter((x) => x !== undefined).join(" "),
   };
 
-  return React.createElement(element, attribute, children);
+  const element2 = "nav";
+  const attribute2 = {
+    "aria-label": "breadcrumb",
+  };
+  const children2 = React.createElement(element, attribute, children);
+
+  return React.createElement(element2, attribute2, children2);
 };
 
-AlertHeading.defaultProps = {
+Breadcrumb.defaultProps = {
   ...BaseDefaultProps,
   ...GlobalDefaultProps,
 };
 
-export default AlertHeading;
+export default Breadcrumb;

@@ -15,21 +15,19 @@ const Alert: FC<Props> = (props: Props): JSX.Element => {
 
   styles.push(...CreateBaseStyles(props));
   styles.push("alert");
-  if (bg) {
-    styles.push(`alert-${bg}`);
-  }
-  if (dismissible) {
-    styles.push("alert-dismissible");
-    styles.push("fade");
-    styles.push("show");
-  }
+  styles.push(bg ? `alert-${bg}` : undefined);
+  styles.push(dismissible ? "alert-dismissible" : undefined);
+  styles.push(dismissible ? "fade" : undefined);
+  styles.push(dismissible ? "show" : undefined);
   styles.push(...CreateGlobalStyles(props));
 
-  return (
-    <div className={styles.join(" ")} role="alert">
-      {children}
-    </div>
-  );
+  const element = "div";
+  const attribute = {
+    className: styles.filter((x) => x !== undefined).join(" "),
+    role: "alert",
+  };
+
+  return React.createElement(element, attribute, children);
 };
 
 Alert.defaultProps = {

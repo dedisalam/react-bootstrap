@@ -3,7 +3,7 @@ import { BG } from "./types";
 interface IBadge {
   bg?: typeof BG[number];
   pill?: boolean;
-  link?: boolean;
+  as?: string;
 }
 
 export default IBadge;

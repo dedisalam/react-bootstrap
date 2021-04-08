@@ -1,9 +1,7 @@
 import React from "react";
-import "bootstrap/scss/bootstrap.scss";
-import "bootstrap/dist/js/bootstrap";
-import Button from "./quark/Button";
+import Button from "../quark/Button";
 
-const App = (): JSX.Element => {
+const Buttons = (): JSX.Element => {
   return (
     <>
       <div>
@@ -155,4 +153,4 @@ const App = (): JSX.Element => {
   );
 };
 
-export default App;
+export default Buttons;

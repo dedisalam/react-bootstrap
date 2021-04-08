@@ -7,30 +7,31 @@ import {
 } from "../../config/Global";
 
 interface Props extends IBase, IGlobal {
-  href?: string;
+  active?: boolean;
 }
 
-const AlertLink: FC<Props> = (props: Props): JSX.Element => {
-  const { children, href } = props;
+const BreadcrumbItem: FC<Props> = (props: Props): JSX.Element => {
+  const { children, active } = props;
   const styles = [];
 
   styles.push(...CreateBaseStyles(props));
-  styles.push("alert-link");
+  styles.push("breadcrumb-item");
+  styles.push(active ? "active" : undefined);
   styles.push(...CreateGlobalStyles(props));
 
-  const element = "a";
+  const element = "li";
   const attribute = {
-    href,
     className: styles.filter((x) => x !== undefined).join(" "),
+    "aria-current": active ? "page" : undefined,
   };
 
   return React.createElement(element, attribute, children);
 };
 
-AlertLink.defaultProps = {
+BreadcrumbItem.defaultProps = {
   ...BaseDefaultProps,
-  href: "index.html",
+  active: false,
   ...GlobalDefaultProps,
 };
 
-export default AlertLink;
+export default BreadcrumbItem;
