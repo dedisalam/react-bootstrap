@@ -1,7 +1,7 @@
-import ALL from "./types";
+import { ALIGN } from "./types";
 
 interface IAlign {
-  align?: boolean | typeof ALL[number];
+  align?: boolean | typeof ALIGN[number];
 }
 
 export default IAlign;

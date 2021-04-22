@@ -1,0 +1,1056 @@
+// Render by Node
+const tuple = <T extends string[]>(...args: T) => args;
+
+const MARGIN = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const MARGINSM = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const MARGINTOP = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const MARGINTOPSM = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const MARGINRIGHT = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const MARGINRIGHTSM = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const MARGINLEFT = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const MARGINLEFTSM = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const MARGINBOTTOM = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const MARGINBOTTOMSM = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const MARGINHORIZONTAL = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const MARGINHORIZONTALSM = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const MARGINVERTICAL = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const MARGINVERTICALSM = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const PADDING = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const PADDINGSM = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const PADDINGTOP = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const PADDINGTOPSM = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const PADDINGRIGHT = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const PADDINGRIGHTSM = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const PADDINGLEFT = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const PADDINGLEFTSM = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const PADDINGBOTTOM = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const PADDINGBOTTOMSM = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const PADDINGHORIZONTAL = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const PADDINGHORIZONTALSM = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const PADDINGVERTICAL = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const PADDINGVERTICALSM = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const MARGINMD = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const MARGINTOPMD = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const MARGINRIGHTMD = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const MARGINLEFTMD = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const MARGINBOTTOMMD = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const MARGINHORIZONTALMD = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const MARGINVERTICALMD = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const PADDINGMD = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const PADDINGTOPMD = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const PADDINGRIGHTMD = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const PADDINGLEFTMD = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const PADDINGBOTTOMMD = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const PADDINGHORIZONTALMD = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const PADDINGVERTICALMD = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const MARGINLG = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const MARGINTOPLG = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const MARGINRIGHTLG = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const MARGINLEFTLG = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const MARGINBOTTOMLG = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const MARGINHORIZONTALLG = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const MARGINVERTICALLG = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const PADDINGLG = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const PADDINGTOPLG = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const PADDINGRIGHTLG = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const PADDINGLEFTLG = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const PADDINGBOTTOMLG = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const PADDINGHORIZONTALLG = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const PADDINGVERTICALLG = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const MARGINXL = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const MARGINTOPXL = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const MARGINRIGHTXL = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const MARGINLEFTXL = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const MARGINBOTTOMXL = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const MARGINHORIZONTALXL = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const MARGINVERTICALXL = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const PADDINGXL = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const PADDINGTOPXL = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const PADDINGRIGHTXL = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const PADDINGLEFTXL = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const PADDINGBOTTOMXL = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const PADDINGHORIZONTALXL = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+const PADDINGVERTICALXL = tuple(
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "auto",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5"
+);
+
+export {
+  MARGIN,
+  MARGINSM,
+  MARGINTOP,
+  MARGINTOPSM,
+  MARGINRIGHT,
+  MARGINRIGHTSM,
+  MARGINLEFT,
+  MARGINLEFTSM,
+  MARGINBOTTOM,
+  MARGINBOTTOMSM,
+  MARGINHORIZONTAL,
+  MARGINHORIZONTALSM,
+  MARGINVERTICAL,
+  MARGINVERTICALSM,
+  PADDING,
+  PADDINGSM,
+  PADDINGTOP,
+  PADDINGTOPSM,
+  PADDINGRIGHT,
+  PADDINGRIGHTSM,
+  PADDINGLEFT,
+  PADDINGLEFTSM,
+  PADDINGBOTTOM,
+  PADDINGBOTTOMSM,
+  PADDINGHORIZONTAL,
+  PADDINGHORIZONTALSM,
+  PADDINGVERTICAL,
+  PADDINGVERTICALSM,
+  MARGINMD,
+  MARGINTOPMD,
+  MARGINRIGHTMD,
+  MARGINLEFTMD,
+  MARGINBOTTOMMD,
+  MARGINHORIZONTALMD,
+  MARGINVERTICALMD,
+  PADDINGMD,
+  PADDINGTOPMD,
+  PADDINGRIGHTMD,
+  PADDINGLEFTMD,
+  PADDINGBOTTOMMD,
+  PADDINGHORIZONTALMD,
+  PADDINGVERTICALMD,
+  MARGINLG,
+  MARGINTOPLG,
+  MARGINRIGHTLG,
+  MARGINLEFTLG,
+  MARGINBOTTOMLG,
+  MARGINHORIZONTALLG,
+  MARGINVERTICALLG,
+  PADDINGLG,
+  PADDINGTOPLG,
+  PADDINGRIGHTLG,
+  PADDINGLEFTLG,
+  PADDINGBOTTOMLG,
+  PADDINGHORIZONTALLG,
+  PADDINGVERTICALLG,
+  MARGINXL,
+  MARGINTOPXL,
+  MARGINRIGHTXL,
+  MARGINLEFTXL,
+  MARGINBOTTOMXL,
+  MARGINHORIZONTALXL,
+  MARGINVERTICALXL,
+  PADDINGXL,
+  PADDINGTOPXL,
+  PADDINGRIGHTXL,
+  PADDINGLEFTXL,
+  PADDINGBOTTOMXL,
+  PADDINGHORIZONTALXL,
+  PADDINGVERTICALXL,
+};

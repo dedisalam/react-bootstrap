@@ -1,6 +1,10 @@
 import React, { FC } from "react";
 import { BaseDefaultProps, CreateBaseStyles, IBase } from "../../config";
-import { AlertDefaultProps, IAlert } from "../../config/Component/Alert";
+import {
+  AlertDefaultProps,
+  CreateAlertStyles,
+  IAlert,
+} from "../../config/Component/Alert";
 import {
   CreateGlobalStyles,
   GlobalDefaultProps,
@@ -10,20 +14,17 @@ import {
 interface Props extends IBase, IAlert, IGlobal {}
 
 const Alert: FC<Props> = (props: Props): JSX.Element => {
-  const { children, bg, dismissible } = props;
-  const styles = [];
-
-  styles.push(...CreateBaseStyles(props));
-  styles.push("alert");
-  styles.push(bg ? `alert-${bg}` : undefined);
-  styles.push(dismissible ? "alert-dismissible" : undefined);
-  styles.push(dismissible ? "fade" : undefined);
-  styles.push(dismissible ? "show" : undefined);
-  styles.push(...CreateGlobalStyles(props));
+  const { children } = props;
 
   const element = "div";
+
+  const styles = [];
+  styles.push(...CreateBaseStyles(props));
+  styles.push(...CreateAlertStyles(props));
+  styles.push(...CreateGlobalStyles(props));
+
   const attribute = {
-    className: styles.filter((x) => x !== undefined).join(" "),
+    className: styles.join(" "),
     role: "alert",
   };
 

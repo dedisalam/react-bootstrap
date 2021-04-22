@@ -3,20 +3,17 @@ import IDisplay from "./interface";
 const CreateDisplayStyles = (props: IDisplay): (string | boolean)[] => {
   const {
     display,
-    displayXS,
     displaySM,
     displayMD,
     displayLG,
     displayXL,
+    displayPrint,
   } = props;
 
   const styles = [];
 
   if (display) {
     styles.push(`d-${display}`);
-  }
-  if (displayXS) {
-    styles.push(`d-xs-${displayXS}`);
   }
   if (displaySM) {
     styles.push(`d-sm-${displaySM}`);
@@ -29,6 +26,9 @@ const CreateDisplayStyles = (props: IDisplay): (string | boolean)[] => {
   }
   if (displayXL) {
     styles.push(`d-xl-${displayXL}`);
+  }
+  if (displayPrint) {
+    styles.push(`d-print-${displayPrint}`);
   }
 
   return styles;

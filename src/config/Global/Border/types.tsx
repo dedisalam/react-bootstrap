@@ -1,17 +1,7 @@
 // Render by Node
 const tuple = <T extends string[]>(...args: T) => args;
 
-const ALL = tuple(
-  "all",
-  "top",
-  "right",
-  "bottom",
-  "left",
-  "0",
-  "top-0",
-  "right-0",
-  "bottom-0",
-  "left-0",
+const BORDERCOLOR = tuple(
   "primary",
   "secondary",
   "success",
@@ -22,5 +12,17 @@ const ALL = tuple(
   "dark",
   "white"
 );
+const BORDERRADIUS = tuple(
+  "sm",
+  "",
+  "top",
+  "right",
+  "bottom",
+  "left",
+  "lg",
+  "circle",
+  "pill",
+  "0"
+);
 
-export default ALL;
+export { BORDERCOLOR, BORDERRADIUS };

@@ -1,7 +1,7 @@
 // Render by Node
 const tuple = <T extends string[]>(...args: T) => args;
 
-const DisplayALL = tuple(
+const DISPLAY = tuple(
   "none",
   "inline",
   "inline-block",
@@ -12,7 +12,7 @@ const DisplayALL = tuple(
   "flex",
   "inline-flex"
 );
-const DisplayXS = tuple(
+const DISPLAYSM = tuple(
   "none",
   "inline",
   "inline-block",
@@ -23,7 +23,7 @@ const DisplayXS = tuple(
   "flex",
   "inline-flex"
 );
-const DisplaySM = tuple(
+const DISPLAYMD = tuple(
   "none",
   "inline",
   "inline-block",
@@ -34,7 +34,7 @@ const DisplaySM = tuple(
   "flex",
   "inline-flex"
 );
-const DisplayMD = tuple(
+const DISPLAYLG = tuple(
   "none",
   "inline",
   "inline-block",
@@ -45,7 +45,7 @@ const DisplayMD = tuple(
   "flex",
   "inline-flex"
 );
-const DisplayLG = tuple(
+const DISPLAYXL = tuple(
   "none",
   "inline",
   "inline-block",
@@ -56,18 +56,7 @@ const DisplayLG = tuple(
   "flex",
   "inline-flex"
 );
-const DisplayXL = tuple(
-  "none",
-  "inline",
-  "inline-block",
-  "block",
-  "table",
-  "table-row",
-  "table-cell",
-  "flex",
-  "inline-flex"
-);
-const DisplayPRINT = tuple(
+const DISPLAYPRINT = tuple(
   "none",
   "inline",
   "inline-block",
@@ -79,12 +68,4 @@ const DisplayPRINT = tuple(
   "inline-flex"
 );
 
-export {
-  DisplayALL,
-  DisplayXS,
-  DisplaySM,
-  DisplayMD,
-  DisplayLG,
-  DisplayXL,
-  DisplayPRINT,
-};
+export { DISPLAY, DISPLAYSM, DISPLAYMD, DISPLAYLG, DISPLAYXL, DISPLAYPRINT };

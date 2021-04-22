@@ -1,10 +1,10 @@
 const DisplayDefaultProps = {
   display: false,
-  displayXS: false,
   displaySM: false,
   displayMD: false,
   displayLG: false,
   displayXL: false,
+  displayPrint: false,
 };
 
 export default DisplayDefaultProps;

@@ -1,8 +1,7 @@
-/* eslint-disable import/prefer-default-export */
 // Render by Node
 const tuple = <T extends string[]>(...args: T) => args;
 
-const BG = tuple(
+const BGCOLOR = tuple(
   "primary",
   "secondary",
   "success",
@@ -13,4 +12,4 @@ const BG = tuple(
   "dark"
 );
 
-export { BG };
+export { BGCOLOR };

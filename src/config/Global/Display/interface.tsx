@@ -1,19 +1,19 @@
 import {
-  DisplayALL,
-  DisplayLG,
-  DisplayMD,
-  DisplaySM,
-  DisplayXS,
-  DisplayXL,
+  DISPLAY,
+  DISPLAYLG,
+  DISPLAYMD,
+  DISPLAYPRINT,
+  DISPLAYSM,
+  DISPLAYXL,
 } from "./types";
 
 interface IDisplay {
-  display?: boolean | typeof DisplayALL[number];
-  displayXS?: boolean | typeof DisplayXS[number];
-  displaySM?: boolean | typeof DisplaySM[number];
-  displayMD?: boolean | typeof DisplayMD[number];
-  displayLG?: boolean | typeof DisplayLG[number];
-  displayXL?: boolean | typeof DisplayXL[number];
+  display?: boolean | typeof DISPLAY[number];
+  displaySM?: boolean | typeof DISPLAYSM[number];
+  displayMD?: boolean | typeof DISPLAYMD[number];
+  displayLG?: boolean | typeof DISPLAYLG[number];
+  displayXL?: boolean | typeof DISPLAYXL[number];
+  displayPrint?: boolean | typeof DISPLAYPRINT[number];
 }
 
 export default IDisplay;

@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import { BaseDefaultProps, CreateBaseStyles, IBase } from "../../config";
+import CreateAlertLinkStyles from "../../config/Component/AlertLink";
 import {
   CreateGlobalStyles,
   GlobalDefaultProps,
@@ -11,17 +12,17 @@ interface Props extends IBase, IGlobal {
 }
 
 const AlertLink: FC<Props> = (props: Props): JSX.Element => {
+  const element = "a";
   const { children, href } = props;
   const styles = [];
 
   styles.push(...CreateBaseStyles(props));
-  styles.push("alert-link");
+  styles.push(...CreateAlertLinkStyles());
   styles.push(...CreateGlobalStyles(props));
 
-  const element = "a";
   const attribute = {
     href,
-    className: styles.filter((x) => x !== undefined).join(" "),
+    className: styles.join(" "),
   };
 
   return React.createElement(element, attribute, children);

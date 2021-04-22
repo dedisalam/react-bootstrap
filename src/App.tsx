@@ -2,52 +2,55 @@ import React from "react";
 import "bootstrap/scss/bootstrap.scss";
 import "bootstrap/dist/js/bootstrap";
 import Button from "./quark/Button";
-import ButtonGroup from "./quark/ButtonGroup";
+import Card from "./quark/Card";
+import CardBody from "./quark/CardBody";
+import CardTitle from "./quark/CardTitle";
+import CardText from "./quark/CardText";
 
 const App = (): JSX.Element => {
   return (
     <>
       <div>
-        <div className="card" style={{ width: "18rem" }}>
+        <Card style={{ width: "18rem" }}>
           <img
             src="https://dummyimage.com/256x180/000/ff00ff"
             className="card-img-top"
             alt="..."
           />
-          <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">
+          <CardBody>
+            <CardTitle>Card title</CardTitle>
+            <CardText>
               Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
+              bulk of the card&lsquo;s content.
+            </CardText>
             <Button as="a" bg="primary">
               Go somewhere
             </Button>
-          </div>
-        </div>
+          </CardBody>
+        </Card>
       </div>
       <div>
-        <div className="card">
-          <div className="card-body">This is some text within a card body.</div>
-        </div>
+        <Card>
+          <CardBody>This is some text within a card body.</CardBody>
+        </Card>
       </div>
       <div>
-        <div className="card" style={{ width: "18rem" }}>
-          <div className="card-body">
-            <h5 className="card-title">Card title</h5>
+        <Card style={{ width: "18rem" }}>
+          <CardBody>
+            <CardTitle>Card title</CardTitle>
             <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6>
-            <p className="card-text">
+            <CardText>
               Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" className="card-link">
+              bulk of the card&lsquo;s content.
+            </CardText>
+            <a href="index.html" className="card-link">
               Card link
             </a>
-            <a href="#" className="card-link">
+            <a href="index.html" className="card-link">
               Another link
             </a>
-          </div>
-        </div>
+          </CardBody>
+        </Card>
       </div>
       <div>
         <div className="card" style={{ width: "18rem" }}>
@@ -59,7 +62,7 @@ const App = (): JSX.Element => {
           <div className="card-body">
             <p className="card-text">
               Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              bulk of the card&lsquo;s content.
             </p>
           </div>
         </div>
@@ -104,7 +107,7 @@ const App = (): JSX.Element => {
             <h5 className="card-title">Card title</h5>
             <p className="card-text">
               Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              bulk of the card&lsquo;s content.
             </p>
           </div>
           <ul className="list-group list-group-flush">
@@ -113,10 +116,10 @@ const App = (): JSX.Element => {
             <li className="list-group-item">A third item</li>
           </ul>
           <div className="card-body">
-            <a href="#" className="card-link">
+            <a href="index.html" className="card-link">
               Card link
             </a>
-            <a href="#" className="card-link">
+            <a href="index.html" className="card-link">
               Another link
             </a>
           </div>
@@ -131,7 +134,7 @@ const App = (): JSX.Element => {
               With supporting text below as a natural lead-in to additional
               content.
             </p>
-            <a href="#" className="btn btn-primary">
+            <a href="index.html" className="btn btn-primary">
               Go somewhere
             </a>
           </div>
@@ -146,7 +149,7 @@ const App = (): JSX.Element => {
               With supporting text below as a natural lead-in to additional
               content.
             </p>
-            <a href="#" className="btn btn-primary">
+            <a href="index.html" className="btn btn-primary">
               Go somewhere
             </a>
           </div>
@@ -174,7 +177,7 @@ const App = (): JSX.Element => {
               With supporting text below as a natural lead-in to additional
               content.
             </p>
-            <a href="#" className="btn btn-primary">
+            <a href="index.html" className="btn btn-primary">
               Go somewhere
             </a>
           </div>
@@ -191,7 +194,7 @@ const App = (): JSX.Element => {
                   With supporting text below as a natural lead-in to additional
                   content.
                 </p>
-                <a href="#" className="btn btn-primary">
+                <a href="index.html" className="btn btn-primary">
                   Go somewhere
                 </a>
               </div>
@@ -205,7 +208,7 @@ const App = (): JSX.Element => {
                   With supporting text below as a natural lead-in to additional
                   content.
                 </p>
-                <a href="#" className="btn btn-primary">
+                <a href="index.html" className="btn btn-primary">
                   Go somewhere
                 </a>
               </div>
@@ -221,7 +224,7 @@ const App = (): JSX.Element => {
               With supporting text below as a natural lead-in to additional
               content.
             </p>
-            <a href="#" className="btn btn-primary">
+            <a href="index.html" className="btn btn-primary">
               Button
             </a>
           </div>
@@ -233,7 +236,7 @@ const App = (): JSX.Element => {
               With supporting text below as a natural lead-in to additional
               content.
             </p>
-            <a href="#" className="btn btn-primary">
+            <a href="index.html" className="btn btn-primary">
               Button
             </a>
           </div>
@@ -247,7 +250,7 @@ const App = (): JSX.Element => {
               With supporting text below as a natural lead-in to additional
               content.
             </p>
-            <a href="#" className="btn btn-primary">
+            <a href="index.html" className="btn btn-primary">
               Go somewhere
             </a>
           </div>
@@ -261,7 +264,7 @@ const App = (): JSX.Element => {
               With supporting text below as a natural lead-in to additional
               content.
             </p>
-            <a href="#" className="btn btn-primary">
+            <a href="index.html" className="btn btn-primary">
               Go somewhere
             </a>
           </div>
@@ -273,7 +276,7 @@ const App = (): JSX.Element => {
               With supporting text below as a natural lead-in to additional
               content.
             </p>
-            <a href="#" className="btn btn-primary">
+            <a href="index.html" className="btn btn-primary">
               Go somewhere
             </a>
           </div>
@@ -285,7 +288,7 @@ const App = (): JSX.Element => {
               With supporting text below as a natural lead-in to additional
               content.
             </p>
-            <a href="#" className="btn btn-primary">
+            <a href="index.html" className="btn btn-primary">
               Go somewhere
             </a>
           </div>
@@ -296,19 +299,19 @@ const App = (): JSX.Element => {
           <div className="card-header">
             <ul className="nav nav-tabs card-header-tabs">
               <li className="nav-item">
-                <a className="nav-link active" href="#">
+                <a className="nav-link active" href="index.html">
                   Active
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="index.html">
                   Link
                 </a>
               </li>
               <li className="nav-item">
                 <a
                   className="nav-link disabled"
-                  href="#"
+                  href="index.html"
                   tabIndex={-1}
                   aria-disabled="true"
                 >
@@ -323,7 +326,7 @@ const App = (): JSX.Element => {
               With supporting text below as a natural lead-in to additional
               content.
             </p>
-            <a href="#" className="btn btn-primary">
+            <a href="index.html" className="btn btn-primary">
               Go somewhere
             </a>
           </div>
@@ -334,19 +337,19 @@ const App = (): JSX.Element => {
           <div className="card-header">
             <ul className="nav nav-pills card-header-pills">
               <li className="nav-item">
-                <a className="nav-link active" href="#">
+                <a className="nav-link active" href="index.html">
                   Active
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="index.html">
                   Link
                 </a>
               </li>
               <li className="nav-item">
                 <a
                   className="nav-link disabled"
-                  href="#"
+                  href="index.html"
                   tabIndex={-1}
                   aria-disabled="true"
                 >
@@ -361,7 +364,7 @@ const App = (): JSX.Element => {
               With supporting text below as a natural lead-in to additional
               content.
             </p>
-            <a href="#" className="btn btn-primary">
+            <a href="index.html" className="btn btn-primary">
               Go somewhere
             </a>
           </div>
@@ -456,7 +459,7 @@ const App = (): JSX.Element => {
             <h5 className="card-title">Primary card title</h5>
             <p className="card-text">
               Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              bulk of the card&lsquo;s content.
             </p>
           </div>
         </div>
@@ -469,7 +472,7 @@ const App = (): JSX.Element => {
             <h5 className="card-title">Secondary card title</h5>
             <p className="card-text">
               Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              bulk of the card&lsquo;s content.
             </p>
           </div>
         </div>
@@ -482,7 +485,7 @@ const App = (): JSX.Element => {
             <h5 className="card-title">Success card title</h5>
             <p className="card-text">
               Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              bulk of the card&lsquo;s content.
             </p>
           </div>
         </div>
@@ -495,7 +498,7 @@ const App = (): JSX.Element => {
             <h5 className="card-title">Danger card title</h5>
             <p className="card-text">
               Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              bulk of the card&lsquo;s content.
             </p>
           </div>
         </div>
@@ -508,7 +511,7 @@ const App = (): JSX.Element => {
             <h5 className="card-title">Warning card title</h5>
             <p className="card-text">
               Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              bulk of the card&lsquo;s content.
             </p>
           </div>
         </div>
@@ -521,7 +524,7 @@ const App = (): JSX.Element => {
             <h5 className="card-title">Info card title</h5>
             <p className="card-text">
               Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              bulk of the card&lsquo;s content.
             </p>
           </div>
         </div>
@@ -531,7 +534,7 @@ const App = (): JSX.Element => {
             <h5 className="card-title">Light card title</h5>
             <p className="card-text">
               Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              bulk of the card&lsquo;s content.
             </p>
           </div>
         </div>
@@ -544,7 +547,7 @@ const App = (): JSX.Element => {
             <h5 className="card-title">Dark card title</h5>
             <p className="card-text">
               Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              bulk of the card&lsquo;s content.
             </p>
           </div>
         </div>
@@ -556,7 +559,7 @@ const App = (): JSX.Element => {
             <h5 className="card-title">Primary card title</h5>
             <p className="card-text">
               Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              bulk of the card&lsquo;s content.
             </p>
           </div>
         </div>
@@ -569,7 +572,7 @@ const App = (): JSX.Element => {
             <h5 className="card-title">Secondary card title</h5>
             <p className="card-text">
               Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              bulk of the card&lsquo;s content.
             </p>
           </div>
         </div>
@@ -579,7 +582,7 @@ const App = (): JSX.Element => {
             <h5 className="card-title">Success card title</h5>
             <p className="card-text">
               Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              bulk of the card&lsquo;s content.
             </p>
           </div>
         </div>
@@ -589,7 +592,7 @@ const App = (): JSX.Element => {
             <h5 className="card-title">Danger card title</h5>
             <p className="card-text">
               Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              bulk of the card&lsquo;s content.
             </p>
           </div>
         </div>
@@ -599,7 +602,7 @@ const App = (): JSX.Element => {
             <h5 className="card-title">Warning card title</h5>
             <p className="card-text">
               Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              bulk of the card&lsquo;s content.
             </p>
           </div>
         </div>
@@ -609,7 +612,7 @@ const App = (): JSX.Element => {
             <h5 className="card-title">Info card title</h5>
             <p className="card-text">
               Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              bulk of the card&lsquo;s content.
             </p>
           </div>
         </div>
@@ -619,7 +622,7 @@ const App = (): JSX.Element => {
             <h5 className="card-title">Light card title</h5>
             <p className="card-text">
               Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              bulk of the card&lsquo;s content.
             </p>
           </div>
         </div>
@@ -629,7 +632,7 @@ const App = (): JSX.Element => {
             <h5 className="card-title">Dark card title</h5>
             <p className="card-text">
               Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              bulk of the card&lsquo;s content.
             </p>
           </div>
         </div>
@@ -643,7 +646,7 @@ const App = (): JSX.Element => {
             <h5 className="card-title">Success card title</h5>
             <p className="card-text">
               Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              bulk of the card&lsquo;s content.
             </p>
           </div>
           <div className="card-footer bg-transparent border-success">

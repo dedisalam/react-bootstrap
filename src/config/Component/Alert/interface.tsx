@@ -1,7 +1,7 @@
-import { BG } from "./types";
+import { BGCOLOR } from "./types";
 
 interface IAlert {
-  bg?: typeof BG[number];
+  bg?: typeof BGCOLOR[number];
   dismissible?: boolean;
 }
 

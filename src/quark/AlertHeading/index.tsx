@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import { BaseDefaultProps, CreateBaseStyles, IBase } from "../../config";
+import CreateAlertHeadingStyles from "../../config/Component/AlertHeading";
 import {
   CreateGlobalStyles,
   GlobalDefaultProps,
@@ -9,16 +10,17 @@ import {
 interface Props extends IBase, IGlobal {}
 
 const AlertHeading: FC<Props> = (props: Props): JSX.Element => {
+  const element = "h4";
+
   const { children } = props;
   const styles = [];
 
   styles.push(...CreateBaseStyles(props));
-  styles.push("alert-heading");
+  styles.push(...CreateAlertHeadingStyles());
   styles.push(...CreateGlobalStyles(props));
 
-  const element = "h4";
   const attribute = {
-    className: styles.filter((x) => x !== undefined).join(" "),
+    className: styles.join(" "),
   };
 
   return React.createElement(element, attribute, children);

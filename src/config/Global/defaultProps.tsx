@@ -1,21 +1,15 @@
 import { AlignDefaultProps } from "./Align";
 import { BackgroundDefaultProps } from "./Background";
 import { BorderDefaultProps } from "./Border";
-import { BorderRadiusDefaultProps } from "./BorderRadius";
-import { ClearfixDefaultProps } from "./Clearfix";
 import { DisplayDefaultProps } from "./Display";
-import { MarginDefaultProps } from "./Margin";
-import { PaddingDefaultProps } from "./Padding";
+import { SpacingDefaultProps } from "./Spacing";
 
 const GlobalDefaultProps = {
   ...DisplayDefaultProps,
-  ...MarginDefaultProps,
-  ...PaddingDefaultProps,
+  ...SpacingDefaultProps,
   ...AlignDefaultProps,
   ...BackgroundDefaultProps,
   ...BorderDefaultProps,
-  ...BorderRadiusDefaultProps,
-  ...ClearfixDefaultProps,
 };
 
 export default GlobalDefaultProps;

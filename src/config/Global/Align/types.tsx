@@ -1,7 +1,7 @@
 // Render by Node
 const tuple = <T extends string[]>(...args: T) => args;
 
-const ALL = tuple(
+const ALIGN = tuple(
   "baseline",
   "top",
   "middle",
@@ -10,4 +10,4 @@ const ALL = tuple(
   "text-top"
 );
 
-export default ALL;
+export { ALIGN };

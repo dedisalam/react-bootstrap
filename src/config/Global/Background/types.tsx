@@ -1,7 +1,7 @@
 // Render by Node
 const tuple = <T extends string[]>(...args: T) => args;
 
-const ALL = tuple(
+const BACKGROUND = tuple(
   "primary",
   "secondary",
   "success",
@@ -10,6 +10,8 @@ const ALL = tuple(
   "danger",
   "light",
   "dark",
+  "white",
+  "transparent",
   "gradient-primary",
   "gradient-secondary",
   "gradient-success",
@@ -17,9 +19,7 @@ const ALL = tuple(
   "gradient-warning",
   "gradient-danger",
   "gradient-light",
-  "gradient-dark",
-  "white",
-  "transparent"
+  "gradient-dark"
 );
 
-export default ALL;
+export { BACKGROUND };

@@ -1,20 +1,9 @@
 import { IAlign } from "./Align";
 import { IBackground } from "./Background";
 import { IBorder } from "./Border";
-import { IBorderRadius } from "./BorderRadius";
-import { IClearfix } from "./Clearfix";
 import { IDisplay } from "./Display";
-import { IMargin } from "./Margin";
-import { IPadding } from "./Padding";
+import { ISpacing } from "./Spacing";
 
-interface IGlobal
-  extends IDisplay,
-    IMargin,
-    IPadding,
-    IAlign,
-    IBackground,
-    IBorder,
-    IBorderRadius,
-    IClearfix {}
+interface IGlobal extends IDisplay, ISpacing, IAlign, IBackground, IBorder {}
 
 export default IGlobal;
