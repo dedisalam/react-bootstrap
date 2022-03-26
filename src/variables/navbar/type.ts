@@ -8,7 +8,7 @@ type NavbarVar = {
   'background-color': Obj_;
 };
 type NavbarComp = Global_ & {
-  'background-color': Global_['background-color'];
+  'background-color': Exclude<Global_['background-color'], undefined>;
   children?: React.ReactNode;
   expand: GridBreakpoints_ | 'all';
   mode: 'light' | 'dark';
