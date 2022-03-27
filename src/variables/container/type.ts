@@ -1,17 +1,17 @@
 import {
-  GlobalComp_, GlobalVar_, GridBreakpoints_, Obj_,
+  GlobalProps_, GlobalVar_, GridBreakpoints_, Obj_,
 } from '../global';
 
 type ContainerVar = GlobalVar_ & {
   size: Obj_;
 };
 
-type ContainerComp = GlobalComp_ & {
+type ContainerProps = GlobalProps_ & {
   children?: React.ReactNode;
   size: Exclude<GridBreakpoints_, 'xs'> | 'all' | 'fluid';
 };
 
 export {
-  type ContainerComp as ContainerComp_,
+  type ContainerProps as ContainerProps_,
   type ContainerVar as Container_,
 };

@@ -1,17 +1,18 @@
 import React from 'react';
-import { Navbar_, NAVBAR } from '../../variables';
+import { NavbarProps_, NAVBAR } from '../../variables';
+import globalStyle from '../global';
 import Brand from './Brand';
 
-function Navbar(props:Navbar_) {
+function Navbar(props:NavbarProps_) {
   const {
-    children, expand, mode, 'background-color': BgColor,
+    children, expand, mode,
   } = props;
   const className = [];
 
   className.push(NAVBAR.base);
   className.push(NAVBAR.expand[expand]);
   className.push(NAVBAR.mode[mode]);
-  className.push(NAVBAR['background-color'][BgColor]);
+  className.push(globalStyle(props));
 
   return (
     <nav className={className.join(' ')}>
@@ -27,3 +28,4 @@ export {
   Navbar,
   Brand as NavbarBrand,
 };
+export * from './toggler';

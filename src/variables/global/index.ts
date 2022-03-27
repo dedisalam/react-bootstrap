@@ -1,5 +1,5 @@
 import {
-  GridBreakpoints_, Obj_, GlobalComp_, GlobalVar_,
+  GridBreakpoints_, Obj_, GlobalProps_, GlobalVar_,
 } from './types';
 
 const SEPARATOR = '-';
@@ -39,5 +39,5 @@ export {
   type GridBreakpoints_,
   type Obj_,
   type GlobalVar_,
-  type GlobalComp_,
+  type GlobalProps_,
 };

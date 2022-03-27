@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
-import { NavbarBrand_, NAVBAR_BRAND } from '../../variables';
+import { NavbarBrandProps_, NAVBAR_BRAND } from '../../variables';
 
-function Brand(props:NavbarBrand_) {
+function Brand(props:NavbarBrandProps_) {
   const { children, href } = props;
 
   const className = [];

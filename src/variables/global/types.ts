@@ -11,7 +11,7 @@ type GlobalVar = {
   'background-color': Obj;
 };
 
-type GlobalComp = {
+type GlobalProps = {
   'background-color'?: BackgroundColor;
 };
 
@@ -19,5 +19,5 @@ export {
   type Obj as Obj_,
   type GridBreakpoints as GridBreakpoints_,
   type GlobalVar as GlobalVar_,
-  type GlobalComp as GlobalComp_,
+  type GlobalProps as GlobalProps_,
 };

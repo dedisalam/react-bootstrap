@@ -1,11 +1,13 @@
 import React from 'react';
-import { CONTAINER, Container_ } from '../../variables';
+import { CONTAINER, ContainerProps_ } from '../../variables';
+import globalStyle from '../global';
 
-function Container(props:Container_) {
+function Container(props:ContainerProps_) {
   const { children, size } = props;
 
   const className = [];
   className.push(CONTAINER.size[size]);
+  className.concat(globalStyle(props));
 
   return (
     <div className={className.join(' ')}>

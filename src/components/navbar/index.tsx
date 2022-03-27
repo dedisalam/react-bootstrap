@@ -1,15 +1,17 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
-import { Container, Navbar as NavigationBar, NavbarBrand } from '../../atoms';
+import {
+  Container, Navbar as NavigationBar, NavbarBrand, Toggler, TogglerIcon,
+} from '../../atoms';
 
 function Navbar() {
   return (
-    <NavigationBar expand="lg" mode="dark" background-color="danger">
+    <NavigationBar expand="lg" mode="dark" background-color="info">
       <Container size="fluid">
         <NavbarBrand>Navbar</NavbarBrand>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon" />
-        </button>
+        <Toggler>
+          <TogglerIcon />
+        </Toggler>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">

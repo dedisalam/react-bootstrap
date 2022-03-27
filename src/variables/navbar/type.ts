@@ -1,5 +1,5 @@
 import {
-  GridBreakpoints_, Obj_, GlobalVar_, GlobalComp_,
+  GridBreakpoints_, Obj_, GlobalVar_, GlobalProps_,
 } from '../global';
 
 // Navbar Type
@@ -8,25 +8,41 @@ type NavbarVar = GlobalVar_ & {
   expand: Obj_;
   mode: Obj_;
 };
-type NavbarComp = GlobalComp_ & {
-  'background-color': Exclude<GlobalComp_['background-color'], undefined>;
+type NavbarProps = GlobalProps_ & {
   children?: React.ReactNode;
   expand: GridBreakpoints_ | 'all';
   mode: 'light' | 'dark';
+  'background-color': Exclude<GlobalProps_['background-color'], undefined>;
 };
 
 // Navbar Brand Type
 type NavbarBrandVar = GlobalVar_ & {
   base: string;
 };
-type NavbarBrandComp = GlobalComp_ & {
+type NavbarBrandProps = GlobalProps_ & {
   children?: React.ReactNode;
   href?: string;
 };
 
+// Navbar Toggler Type
+type NavbarTogglerVar = GlobalVar_ & {
+  base: string;
+};
+type NavbarTogglerProps = GlobalProps_ & {
+  children?: React.ReactNode;
+};
+
+// Navbar Toggler Icon Type
+type NavbarTogglerIconVar = GlobalVar_ & {
+  base: string;
+};
+
 export {
-  type NavbarComp as NavbarComp_,
+  type NavbarProps as NavbarProps_,
   type NavbarVar as Navbar_,
-  type NavbarBrandComp as NavbarBrandComp_,
+  type NavbarBrandProps as NavbarBrandProps_,
   type NavbarBrandVar as NavbarBrand_,
+  type NavbarTogglerProps as NavbarTogglerProps_,
+  type NavbarTogglerVar as NavbarToggler_,
+  type NavbarTogglerIconVar as NavbarTogglerIcon_,
 };

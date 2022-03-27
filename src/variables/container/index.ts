@@ -1,6 +1,6 @@
 import { GLOBAL } from '../global';
 import { size } from './function';
-import { Container_, ContainerComp_ } from './type';
+import { Container_, ContainerProps_ } from './type';
 
 const CONTAINER:Container_ = {
   ...GLOBAL,
@@ -9,5 +9,5 @@ const CONTAINER:Container_ = {
 
 export {
   CONTAINER,
-  type ContainerComp_ as Container_,
+  type ContainerProps_,
 };
