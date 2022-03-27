@@ -1,9 +1,9 @@
 import React from 'react';
-import { NAVBAR_TOGGLER_ICON } from '../../../variables';
+import { NAVBAR_TOGGLE_ICON } from '../../../variables';
 
 function Icon() {
   const className = [];
-  className.push(NAVBAR_TOGGLER_ICON.base);
+  className.push(NAVBAR_TOGGLE_ICON.base);
 
   return (
     <span className={className.join(' ')} />

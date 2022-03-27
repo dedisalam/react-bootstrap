@@ -6,9 +6,9 @@ import {
   Navbar_,
   NavbarBrandProps_,
   NavbarBrand_,
-  NavbarTogglerProps_,
-  NavbarToggler_,
-  NavbarTogglerIcon_,
+  NavbarToggleProps_,
+  NavbarToggle_,
+  NavbarToggleIcon_,
 } from './type';
 
 // Navbar variables
@@ -29,15 +29,15 @@ const NAVBAR_BRAND:NavbarBrand_ = {
 };
 
 // Navbar Toggle variables
-const NAVBAR_TOGGLER:NavbarToggler_ = {
+const NAVBAR_TOGGLE:NavbarToggle_ = {
   ...GLOBAL,
   base: `${BASE + SEPARATOR}toggler`,
 };
 
-// Navbar Toggle variables
-const NAVBAR_TOGGLER_ICON:NavbarTogglerIcon_ = {
+// Navbar Toggle Icon variables
+const NAVBAR_TOGGLE_ICON:NavbarToggleIcon_ = {
   ...GLOBAL,
-  base: `${BASE + SEPARATOR}toggler-icon`,
+  base: `${BASE + SEPARATOR}toggler${SEPARATOR}icon`,
 };
 
 export {
@@ -45,7 +45,7 @@ export {
   type NavbarProps_,
   NAVBAR_BRAND,
   type NavbarBrandProps_,
-  NAVBAR_TOGGLER,
-  type NavbarTogglerProps_,
-  NAVBAR_TOGGLER_ICON,
+  NAVBAR_TOGGLE,
+  type NavbarToggleProps_,
+  NAVBAR_TOGGLE_ICON,
 };

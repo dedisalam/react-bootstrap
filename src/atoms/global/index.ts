@@ -1,6 +1,6 @@
 import { GLOBAL, GlobalProps_ } from '../../variables';
 
-function globalStyle(props:GlobalProps_) {
+export default function globalStyle(props:GlobalProps_) {
   const { 'background-color': bgColor } = props;
   const className = [];
   if (bgColor !== undefined) {
@@ -8,4 +8,3 @@ function globalStyle(props:GlobalProps_) {
   }
   return className;
 }
-export default globalStyle;

@@ -2,7 +2,7 @@
 import React from 'react';
 import { NavbarBrandProps_, NAVBAR_BRAND } from '../../variables';
 
-function Brand(props:NavbarBrandProps_) {
+export default function Brand(props:NavbarBrandProps_) {
   const { children, href } = props;
 
   const className = [];
@@ -17,5 +17,3 @@ Brand.defaultProps = {
   children: null,
   href: '#',
 };
-
-export default Brand;

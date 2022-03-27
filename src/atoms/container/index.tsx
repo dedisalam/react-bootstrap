@@ -2,7 +2,7 @@ import React from 'react';
 import { CONTAINER, ContainerProps_ } from '../../variables';
 import globalStyle from '../global';
 
-function Container(props:ContainerProps_) {
+export default function Container(props:ContainerProps_) {
   const { children, size } = props;
 
   const className = [];
@@ -19,5 +19,3 @@ function Container(props:ContainerProps_) {
 Container.defaultProps = {
   children: null,
 };
-
-export default Container;

@@ -25,15 +25,15 @@ type NavbarBrandProps = GlobalProps_ & {
 };
 
 // Navbar Toggler Type
-type NavbarTogglerVar = GlobalVar_ & {
+type NavbarToggleVar = GlobalVar_ & {
   base: string;
 };
-type NavbarTogglerProps = GlobalProps_ & {
+type NavbarToggleProps = GlobalProps_ & {
   children?: React.ReactNode;
 };
 
 // Navbar Toggler Icon Type
-type NavbarTogglerIconVar = GlobalVar_ & {
+type NavbarToggleIconVar = GlobalVar_ & {
   base: string;
 };
 
@@ -42,7 +42,7 @@ export {
   type NavbarVar as Navbar_,
   type NavbarBrandProps as NavbarBrandProps_,
   type NavbarBrandVar as NavbarBrand_,
-  type NavbarTogglerProps as NavbarTogglerProps_,
-  type NavbarTogglerVar as NavbarToggler_,
-  type NavbarTogglerIconVar as NavbarTogglerIcon_,
+  type NavbarToggleProps as NavbarToggleProps_,
+  type NavbarToggleVar as NavbarToggle_,
+  type NavbarToggleIconVar as NavbarToggleIcon_,
 };

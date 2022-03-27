@@ -1,11 +1,10 @@
 import React from 'react';
-import { NavbarTogglerProps_, NAVBAR_TOGGLER } from '../../../variables';
-import Icon from './Icon';
+import { NavbarToggleProps_, NAVBAR_TOGGLE } from '../../../variables';
 
-function Toggler(props: NavbarTogglerProps_) {
+export default function Toggle(props: NavbarToggleProps_) {
   const { children } = props;
   const className = [];
-  className.push(NAVBAR_TOGGLER.base);
+  className.push(NAVBAR_TOGGLE.base);
   return (
     <button className={className.join(' ')} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       {children}
@@ -13,7 +12,6 @@ function Toggler(props: NavbarTogglerProps_) {
   );
 }
 
-export {
-  Toggler,
-  Icon as TogglerIcon,
+Toggle.defaultProps = {
+  children: null,
 };
