@@ -1,13 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
-import { Container, Navbar as NavigationBar } from '../../atoms';
+import { Container, Navbar as NavigationBar, NavbarBrand } from '../../atoms';
 
 function Navbar() {
   return (
     <NavigationBar expand="lg" mode="dark" background-color="danger">
-      <Container size="lg">TEST</Container>
-      <div className="container-fluid">
-        <a className="navbar-brand" href="#">Navbar</a>
+      <Container size="fluid">
+        <NavbarBrand>Navbar</NavbarBrand>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon" />
         </button>
@@ -39,7 +38,7 @@ function Navbar() {
             <button className="btn btn-outline-success" type="submit">Search</button>
           </form>
         </div>
-      </div>
+      </Container>
     </NavigationBar>
   );
 }

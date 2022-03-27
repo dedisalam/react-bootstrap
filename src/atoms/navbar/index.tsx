@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar_, NAVBAR } from '../../variables';
+import Brand from './Brand';
 
 function Navbar(props:Navbar_) {
   const {
@@ -22,5 +23,7 @@ function Navbar(props:Navbar_) {
 Navbar.defaultProps = {
   children: null,
 };
-
-export default Navbar;
+export {
+  Navbar,
+  Brand as NavbarBrand,
+};

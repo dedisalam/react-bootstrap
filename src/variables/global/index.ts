@@ -1,4 +1,6 @@
-import { GridBreakpoints_, Obj_, Global_ } from './types';
+import {
+  GridBreakpoints_, Obj_, GlobalComp_, GlobalVar_,
+} from './types';
 
 const SEPARATOR = '-';
 const GRID_BREAKPOINTS = [
@@ -26,11 +28,16 @@ const BACKGROUND_COLOR = {
   transparent: `${BACKGROUND}${SEPARATOR}transparent`,
 };
 
+const GLOBAL:GlobalVar_ = {
+  'background-color': BACKGROUND_COLOR,
+};
+
 export {
   SEPARATOR,
   GRID_BREAKPOINTS,
-  BACKGROUND_COLOR,
+  GLOBAL,
   type GridBreakpoints_,
   type Obj_,
-  type Global_,
+  type GlobalVar_,
+  type GlobalComp_,
 };
