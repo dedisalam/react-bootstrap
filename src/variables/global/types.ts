@@ -1,4 +1,3 @@
-/* eslint-disable import/prefer-default-export */
 type GridBreakpoints = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl';
 
 type Obj = {
