@@ -1,12 +1,13 @@
 import React from 'react';
-import { CONTAINER, ContainerProps_ } from '../../variables';
+import { NavbarCollapseProps_ } from '../../variables';
 import { globalProps, globalStyle } from '../global';
 
-export default function Container(props:ContainerProps_):JSX.Element {
-  const { children, size } = props;
+export default function Collapse(props:NavbarCollapseProps_) {
+  const { children } = props;
 
   const localClassName = [];
-  localClassName.push(CONTAINER.size[size]);
+  localClassName.push('collapse');
+  localClassName.push('navbar-collapse');
   const className = localClassName.concat(globalStyle(props));
 
   return React.createElement('div', {
@@ -15,6 +16,6 @@ export default function Container(props:ContainerProps_):JSX.Element {
   }, children);
 }
 
-Container.defaultProps = {
+Collapse.defaultProps = {
   children: null,
 };

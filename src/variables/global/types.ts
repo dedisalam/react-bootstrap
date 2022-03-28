@@ -12,6 +12,7 @@ type GlobalVar = {
 
 type GlobalProps = {
   'background-color'?: BackgroundColor;
+  id?: string;
 };
 
 export {

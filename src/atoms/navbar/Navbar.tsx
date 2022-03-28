@@ -1,23 +1,22 @@
 import React from 'react';
 import { NAVBAR, NavbarProps_ } from '../../variables';
-import globalStyle from '../global';
+import { globalProps, globalStyle } from '../global';
 
 export default function Navbar(props:NavbarProps_) {
   const {
     children, expand, mode,
   } = props;
-  const className = [];
 
-  className.push(NAVBAR.base);
-  className.push(NAVBAR.expand[expand]);
-  className.push(NAVBAR.mode[mode]);
-  className.push(globalStyle(props));
+  const localClassName = [];
+  localClassName.push(NAVBAR.base);
+  localClassName.push(NAVBAR.expand[expand]);
+  localClassName.push(NAVBAR.mode[mode]);
+  const className = localClassName.concat(globalStyle(props));
 
-  return (
-    <nav className={className.join(' ')}>
-      {children}
-    </nav>
-  );
+  return React.createElement('nav', {
+    className: className.join(' '),
+    ...globalProps(props),
+  }, children);
 }
 
 Navbar.defaultProps = {

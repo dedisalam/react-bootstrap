@@ -8,7 +8,10 @@ import {
   NavbarBrand_,
   NavbarToggleProps_,
   NavbarToggle_,
+  NavbarToggleIconProps_,
   NavbarToggleIcon_,
+  NavbarCollapseProps_,
+  NavbarCollapse_,
 } from './type';
 
 // Navbar variables
@@ -40,6 +43,12 @@ const NAVBAR_TOGGLE_ICON:NavbarToggleIcon_ = {
   base: `${BASE + SEPARATOR}toggler${SEPARATOR}icon`,
 };
 
+// Navbar brand variables
+const NAVBAR_COLLAPSE:NavbarCollapse_ = {
+  ...GLOBAL,
+  base: `${BASE + SEPARATOR}collapse`,
+};
+
 export {
   NAVBAR,
   type NavbarProps_,
@@ -48,4 +57,7 @@ export {
   NAVBAR_TOGGLE,
   type NavbarToggleProps_,
   NAVBAR_TOGGLE_ICON,
+  type NavbarToggleIconProps_,
+  NAVBAR_COLLAPSE,
+  type NavbarCollapseProps_,
 };

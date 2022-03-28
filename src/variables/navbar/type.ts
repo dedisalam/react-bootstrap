@@ -36,6 +36,16 @@ type NavbarToggleProps = GlobalProps_ & {
 type NavbarToggleIconVar = GlobalVar_ & {
   base: string;
 };
+type NavbarToggleIconProps = GlobalProps_ & {
+};
+
+// Navbar Collapse Type
+type NavbarCollapseVar = GlobalVar_ & {
+  base: string;
+};
+type NavbarCollapseProps = GlobalProps_ & {
+  children?: React.ReactNode;
+};
 
 export {
   type NavbarProps as NavbarProps_,
@@ -44,5 +54,8 @@ export {
   type NavbarBrandVar as NavbarBrand_,
   type NavbarToggleProps as NavbarToggleProps_,
   type NavbarToggleVar as NavbarToggle_,
+  type NavbarToggleIconProps as NavbarToggleIconProps_,
   type NavbarToggleIconVar as NavbarToggleIcon_,
+  type NavbarCollapseProps as NavbarCollapseProps_,
+  type NavbarCollapseVar as NavbarCollapse_,
 };

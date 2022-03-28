@@ -1,13 +1,16 @@
 import React from 'react';
-import { NAVBAR_TOGGLE_ICON } from '../../../variables';
+import { NavbarToggleIconProps_, NAVBAR_TOGGLE_ICON } from '../../../variables';
+import { globalProps, globalStyle } from '../../global';
 
-function Icon() {
-  const className = [];
-  className.push(NAVBAR_TOGGLE_ICON.base);
+function Icon(props:NavbarToggleIconProps_):JSX.Element {
+  const localClassName = [];
+  localClassName.push(NAVBAR_TOGGLE_ICON.base);
+  const className = localClassName.concat(globalStyle(props));
 
-  return (
-    <span className={className.join(' ')} />
-  );
+  return React.createElement('span', {
+    className: className.join(' '),
+    ...globalProps(props),
+  });
 }
 
 export default Icon;

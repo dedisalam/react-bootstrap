@@ -10,9 +10,9 @@ function Navbar() {
       <Container size="fluid">
         <NavigationBar.Brand>Navbar</NavigationBar.Brand>
         <NavigationBar.Toggle>
-          <NavigationBar.Toggle.Icon />
+          <NavigationBar.Toggle.Icon id="test" />
         </NavigationBar.Toggle>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <NavigationBar.Collapse id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="#">Home</a>
@@ -39,7 +39,7 @@ function Navbar() {
             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
             <button className="btn btn-outline-success" type="submit">Search</button>
           </form>
-        </div>
+        </NavigationBar.Collapse>
       </Container>
     </NavigationBar>
   );
