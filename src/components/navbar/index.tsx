@@ -7,7 +7,7 @@ import {
 function Navbar() {
   return (
     <NavigationBar expand="lg" mode="dark" background-color="info">
-      <Container size="fluid">
+      <Container margin-end="3" size="fluid">
         <NavigationBar.Brand>Navbar</NavigationBar.Brand>
         <NavigationBar.Toggle>
           <NavigationBar.Toggle.Icon id="test" />
