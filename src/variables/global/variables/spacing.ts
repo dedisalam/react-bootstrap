@@ -494,7 +494,7 @@ const SPACING = {
     5: 'pb-5',
     auto: 'pb-auto',
   },
-  'padding-bottop-sm': {
+  'padding-bottom-sm': {
     0: 'pb-sp-0',
     1: 'pb-sp-1',
     2: 'pb-sp-2',
@@ -503,7 +503,7 @@ const SPACING = {
     5: 'pb-sp-5',
     auto: 'pb-sp-auto',
   },
-  'padding-bottop-md': {
+  'padding-bottom-md': {
     0: 'pb-md-0',
     1: 'pb-md-1',
     2: 'pb-md-2',
@@ -512,7 +512,7 @@ const SPACING = {
     5: 'pb-md-5',
     auto: 'pb-md-auto',
   },
-  'padding-bottop-lg': {
+  'padding-bottom-lg': {
     0: 'pb-lg-0',
     1: 'pb-lg-1',
     2: 'pb-lg-2',
@@ -521,7 +521,7 @@ const SPACING = {
     5: 'pb-lg-5',
     auto: 'pb-lg-auto',
   },
-  'padding-bottop-xl': {
+  'padding-bottom-xl': {
     0: 'pb-xl-0',
     1: 'pb-xl-1',
     2: 'pb-xl-2',
@@ -530,7 +530,7 @@ const SPACING = {
     5: 'pb-xl-5',
     auto: 'pb-xl-auto',
   },
-  'padding-bottop-xxl': {
+  'padding-bottom-xxl': {
     0: 'pb-xxl-0',
     1: 'pb-xxl-1',
     2: 'pb-xxl-2',
