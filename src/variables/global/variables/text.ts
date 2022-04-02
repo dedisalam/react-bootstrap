@@ -32,6 +32,31 @@ const TEXT = {
     end: 'text-end',
     center: 'text-center',
   },
+  'text-align-sm': {
+    start: 'text-sm-start',
+    end: 'text-sm-end',
+    center: 'text-sm-center',
+  },
+  'text-align-md': {
+    start: 'text-md-start',
+    end: 'text-md-end',
+    center: 'text-md-center',
+  },
+  'text-align-lg': {
+    start: 'text-lg-start',
+    end: 'text-lg-end',
+    center: 'text-lg-center',
+  },
+  'text-align-xl': {
+    start: 'text-xl-start',
+    end: 'text-xl-end',
+    center: 'text-xl-center',
+  },
+  'text-align-xxl': {
+    start: 'text-xxl-start',
+    end: 'text-xxl-end',
+    center: 'text-xxl-center',
+  },
   'text-decoration': {
     none: 'text-decoration-none',
     underline: 'text-decoration-underline',

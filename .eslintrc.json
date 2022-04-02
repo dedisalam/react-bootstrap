@@ -19,7 +19,10 @@
     "project": "./tsconfig.eslint.json"
   },
   "plugins": ["react", "@typescript-eslint"],
-  "rules": {},
+  "rules": {
+    "sort-imports": "error",
+    "@typescript-eslint/type-annotation-spacing": "error"
+  },
   "settings": {
     "react": {
       "version": "detect",

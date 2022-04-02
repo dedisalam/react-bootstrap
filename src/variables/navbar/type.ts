@@ -1,61 +1,50 @@
 import {
-  GridBreakpoints_, Obj_, GlobalVar_, GlobalProps_,
+  Global_,
 } from '../global';
 
 // Navbar Type
-type NavbarVar = GlobalVar_ & {
-  base: string;
-  expand: Obj_;
-  mode: Obj_;
-};
-type NavbarProps = GlobalProps_ & {
-  children?: React.ReactNode;
-  expand: GridBreakpoints_ | 'all';
-  mode: 'light' | 'dark';
-  'background-color': Exclude<GlobalProps_['background-color'], undefined>;
+type Navbar = Global_ & {
+  children?: React.ReactNode,
+  expand:
+  | 'xs'
+  | 'sm'
+  | 'md'
+  | 'lg'
+  | 'xl'
+  | 'xxl'
+  | 'all',
+
+  mode:
+  | 'dark'
+  | 'light',
+
+  'background-color': Exclude<Global_['background-color'], undefined>;
 };
 
 // Navbar Brand Type
-type NavbarBrandVar = GlobalVar_ & {
-  base: string;
-};
-type NavbarBrandProps = GlobalProps_ & {
+type NavbarBrand = Global_ & {
   children?: React.ReactNode;
   href?: string;
 };
 
 // Navbar Toggler Type
-type NavbarToggleVar = GlobalVar_ & {
-  base: string;
-};
-type NavbarToggleProps = GlobalProps_ & {
+type NavbarToggle = Global_ & {
   children?: React.ReactNode;
 };
 
 // Navbar Toggler Icon Type
-type NavbarToggleIconVar = GlobalVar_ & {
-  base: string;
-};
-type NavbarToggleIconProps = GlobalProps_ & {
+type NavbarToggleIcon = Global_ & {
 };
 
 // Navbar Collapse Type
-type NavbarCollapseVar = GlobalVar_ & {
-  base: string;
-};
-type NavbarCollapseProps = GlobalProps_ & {
+type NavbarCollapse = Global_ & {
   children?: React.ReactNode;
 };
 
 export {
-  type NavbarProps as NavbarProps_,
-  type NavbarVar as Navbar_,
-  type NavbarBrandProps as NavbarBrandProps_,
-  type NavbarBrandVar as NavbarBrand_,
-  type NavbarToggleProps as NavbarToggleProps_,
-  type NavbarToggleVar as NavbarToggle_,
-  type NavbarToggleIconProps as NavbarToggleIconProps_,
-  type NavbarToggleIconVar as NavbarToggleIcon_,
-  type NavbarCollapseProps as NavbarCollapseProps_,
-  type NavbarCollapseVar as NavbarCollapse_,
+  type Navbar as Navbar_,
+  type NavbarBrand as NavbarBrand_,
+  type NavbarToggle as NavbarToggle_,
+  type NavbarToggleIcon as NavbarToggleIcon_,
+  type NavbarCollapse as NavbarCollapse_,
 };

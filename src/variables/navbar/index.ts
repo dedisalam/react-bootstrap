@@ -1,63 +1,62 @@
-import { GLOBAL, SEPARATOR } from '../global';
-import { BASE } from './classNames';
-import { expand } from './function';
 import {
-  NavbarProps_,
-  Navbar_,
-  NavbarBrandProps_,
   NavbarBrand_,
-  NavbarToggleProps_,
-  NavbarToggle_,
-  NavbarToggleIconProps_,
-  NavbarToggleIcon_,
-  NavbarCollapseProps_,
   NavbarCollapse_,
+  NavbarToggleIcon_,
+  NavbarToggle_,
+  Navbar_,
 } from './type';
+import { GLOBAL } from '../global';
 
 // Navbar variables
-const NAVBAR:Navbar_ = {
+const NAVBAR = {
   ...GLOBAL,
-  base: BASE,
-  expand: expand(),
+  base: 'navbar',
+  expand: {
+    sm: 'navbar-expand-sm',
+    md: 'navbar-expand-md',
+    lg: 'navbar-expand-lg',
+    xl: 'navbar-expand-xl',
+    xxl: 'navbar-expand-xxl',
+  },
   mode: {
-    light: `${BASE + SEPARATOR}light`,
-    dark: `${BASE + SEPARATOR}dark`,
+    light: 'navbar-light',
+    dark: 'navbar-dark',
   },
 };
 
 // Navbar brand variables
-const NAVBAR_BRAND:NavbarBrand_ = {
+const NAVBAR_BRAND = {
   ...GLOBAL,
-  base: `${BASE + SEPARATOR}brand`,
+  base: 'navbar-brand',
 };
 
 // Navbar Toggle variables
-const NAVBAR_TOGGLE:NavbarToggle_ = {
+const NAVBAR_TOGGLE = {
   ...GLOBAL,
-  base: `${BASE + SEPARATOR}toggler`,
+  base: 'navbar-toggler',
 };
 
 // Navbar Toggle Icon variables
-const NAVBAR_TOGGLE_ICON:NavbarToggleIcon_ = {
+const NAVBAR_TOGGLE_ICON = {
   ...GLOBAL,
-  base: `${BASE + SEPARATOR}toggler${SEPARATOR}icon`,
+  base: 'navbar-toggler-icon',
 };
 
 // Navbar brand variables
-const NAVBAR_COLLAPSE:NavbarCollapse_ = {
+const NAVBAR_COLLAPSE = {
   ...GLOBAL,
-  base: `${BASE + SEPARATOR}collapse`,
+  base: 'navbar-collapse',
 };
 
 export {
   NAVBAR,
-  type NavbarProps_,
+  type Navbar_,
   NAVBAR_BRAND,
-  type NavbarBrandProps_,
+  type NavbarBrand_,
   NAVBAR_TOGGLE,
-  type NavbarToggleProps_,
+  type NavbarToggle_,
   NAVBAR_TOGGLE_ICON,
-  type NavbarToggleIconProps_,
+  type NavbarToggleIcon_,
   NAVBAR_COLLAPSE,
-  type NavbarCollapseProps_,
+  type NavbarCollapse_,
 };
