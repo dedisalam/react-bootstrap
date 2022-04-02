@@ -110,22 +110,56 @@ function margins() {
   return Obj;
 }
 // eslint-disable-next-line no-console
-console.log(margins());
-// eslint-disable-next-line no-console
-// console.log(MARGIN);
-
 const GLOBAL:GlobalVar_ = {
   'background-color': BACKGROUND_COLOR,
+  // 'margin-end': margins(),
+  margin: {},
+  'margin-sm': {},
+  'margin-md': {},
+  'margin-lg': {},
+  'margin-xl': {},
+  'margin-xxl': {},
+  'margin-top': {},
+  'margin-top-sm': {},
+  'margin-top-md': {},
+  'margin-top-lg': {},
+  'margin-top-xl': {},
+  'margin-top-xxl': {},
+  'margin-end': {},
+  'margin-end-sm': {},
+  'margin-end-md': {},
+  'margin-end-lg': {},
+  'margin-end-xl': {},
+  'margin-end-xxl': {},
+  'margin-bottom': {},
+  'margin-bottom-sm': {},
+  'margin-bottom-md': {},
+  'margin-bottom-lg': {},
+  'margin-bottom-xl': {},
+  'margin-bottom-xxl': {},
+  'margin-start': {},
+  'margin-start-sm': {},
+  'margin-start-md': {},
+  'margin-start-lg': {},
+  'margin-start-xl': {},
+  'margin-start-xxl': {},
+  'margin-x': {},
+  'margin-x-sm': {},
+  'margin-x-md': {},
+  'margin-x-lg': {},
+  'margin-x-xl': {},
+  'margin-x-xxl': {},
+  'margin-y': {},
+  'margin-y-sm': {},
+  'margin-y-md': {},
+  'margin-y-lg': {},
+  'margin-y-xl': {},
+  'margin-y-xxl': {},
   ...margins(),
 };
 
 export {
-  BACKGROUND,
   SEPARATOR,
   GLOBAL,
-  THEME_COLOR,
-  UTILITIES_BACKGROUND,
   GRID_BREAKPOINTS,
-  BACKGROUND_COLOR,
-  margins,
 };

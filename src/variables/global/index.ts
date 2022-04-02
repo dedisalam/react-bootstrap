@@ -1,7 +1,8 @@
 import {
   GridBreakpoints_, Obj_, GlobalProps_, GlobalVar_,
 } from './types';
-import { GLOBAL, GRID_BREAKPOINTS, SEPARATOR } from './variables';
+import { GRID_BREAKPOINTS, SEPARATOR } from './variables';
+import GLOBAL from './variables/index';
 
 export {
   SEPARATOR,
