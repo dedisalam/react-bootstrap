@@ -6,7 +6,6 @@ import {
 type Navbar = Global_ & {
   children?: React.ReactNode,
   expand:
-  | 'xs'
   | 'sm'
   | 'md'
   | 'lg'
@@ -41,10 +40,16 @@ type NavbarCollapse = Global_ & {
   children?: React.ReactNode;
 };
 
+// Navbar Nav Type
+type NavbarNav = Global_ & {
+  children?: React.ReactNode;
+};
+
 export {
   type Navbar as Navbar_,
   type NavbarBrand as NavbarBrand_,
   type NavbarToggle as NavbarToggle_,
   type NavbarToggleIcon as NavbarToggleIcon_,
   type NavbarCollapse as NavbarCollapse_,
+  type NavbarNav as NavbarNav_,
 };

@@ -1,5 +1,5 @@
 type Visibility = {
-  visibility:
+  visibility?:
   | 'visible'
   | 'invisible',
 };

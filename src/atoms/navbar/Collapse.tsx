@@ -1,8 +1,8 @@
 import React from 'react';
-import { NavbarCollapseProps_ } from '../../variables';
+import { NavbarCollapse_ } from '../../variables';
 import { globalProps, globalStyle } from '../global';
 
-export default function Collapse(props:NavbarCollapseProps_) {
+export default function Collapse(props: NavbarCollapse_): JSX.Element {
   const { children } = props;
 
   const localClassName = [];

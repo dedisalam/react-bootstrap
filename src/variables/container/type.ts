@@ -1,17 +1,18 @@
-import {
-  GlobalProps_, GlobalVar_, GridBreakpoints_, Obj_,
-} from '../global';
+/* eslint-disable import/prefer-default-export */
+import { Global_ } from '../global';
 
-type ContainerVar = GlobalVar_ & {
-  size: Obj_;
-};
-
-type ContainerProps = GlobalProps_ & {
+type Container = Global_ & {
   children?: React.ReactNode;
-  size: Exclude<GridBreakpoints_, 'xs'> | 'all' | 'fluid';
+  size:
+  | 'sm'
+  | 'md'
+  | 'lg'
+  | 'xl'
+  | 'xxl'
+  | 'all'
+  | 'fluid',
 };
 
 export {
-  type ContainerProps as ContainerProps_,
-  type ContainerVar as Container_,
+  type Container as Container_,
 };

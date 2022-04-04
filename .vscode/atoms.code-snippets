@@ -20,10 +20,10 @@
     "prefix": ["atoms"],
     "body": [
       "import React from 'react';",
-      "import { ${TM_FILENAME_BASE}Props_, ${TM_FILENAME_BASE/(.*)/${1:/upcase}/} } from '../../variables';",
+      "import { ${TM_FILENAME_BASE}_, ${TM_FILENAME_BASE/(.*)/${1:/upcase}/} } from '../../variables';",
       "import { globalProps, globalStyle } from '../global';",
       "",
-      "export default function ${TM_FILENAME_BASE}(props:${TM_FILENAME_BASE}Props_) {",
+      "export default function ${TM_FILENAME_BASE}(props: ${TM_FILENAME_BASE}_): JSX.Element {",
       "  const { children } = props;",
       "",
       "  const localClassName = [];",

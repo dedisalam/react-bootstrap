@@ -1,20 +1,20 @@
 import React from 'react';
-import { CONTAINER, Container_ } from '../../variables';
+import { NavbarNav_, NAVBAR_NAV } from '../../variables';
 import { globalProps, globalStyle } from '../global';
 
-export default function Container(props: Container_): JSX.Element {
-  const { children, size } = props;
+export default function Nav(props: NavbarNav_): JSX.Element {
+  const { children } = props;
 
   const localClassName = [];
-  localClassName.push(CONTAINER.size[size]);
+  localClassName.push(NAVBAR_NAV.base);
   const className = localClassName.concat(globalStyle(props));
 
-  return React.createElement('div', {
+  return React.createElement('ul', {
     className: className.join(' '),
     ...globalProps(props),
   }, children);
 }
 
-Container.defaultProps = {
+Nav.defaultProps = {
   children: null,
 };

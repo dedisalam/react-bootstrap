@@ -1,8 +1,8 @@
 import React from 'react';
-import { NavbarToggleProps_, NAVBAR_TOGGLE } from '../../../variables';
+import { NavbarToggle_, NAVBAR_TOGGLE } from '../../../variables';
 import { globalProps, globalStyle } from '../../global';
 
-export default function Toggle(props: NavbarToggleProps_): JSX.Element {
+export default function Toggle(props: NavbarToggle_): JSX.Element {
   const { children } = props;
 
   const localClassName = [];

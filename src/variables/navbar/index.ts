@@ -4,6 +4,7 @@ import {
   NavbarToggleIcon_,
   NavbarToggle_,
   Navbar_,
+  NavbarNav_,
 } from './type';
 import { GLOBAL } from '../global';
 
@@ -12,6 +13,7 @@ const NAVBAR = {
   ...GLOBAL,
   base: 'navbar',
   expand: {
+    all: 'navbar-expand',
     sm: 'navbar-expand-sm',
     md: 'navbar-expand-md',
     lg: 'navbar-expand-lg',
@@ -48,6 +50,12 @@ const NAVBAR_COLLAPSE = {
   base: 'navbar-collapse',
 };
 
+// Navbar nav variables
+const NAVBAR_NAV = {
+  ...GLOBAL,
+  base: 'navbar-nav',
+};
+
 export {
   NAVBAR,
   type Navbar_,
@@ -59,4 +67,6 @@ export {
   type NavbarToggleIcon_,
   NAVBAR_COLLAPSE,
   type NavbarCollapse_,
+  NAVBAR_NAV,
+  type NavbarNav_,
 };

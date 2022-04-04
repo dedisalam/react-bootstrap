@@ -1,13 +1,20 @@
 import { GLOBAL } from '../global';
-import { size } from './function';
-import { Container_, ContainerProps_ } from './type';
+import { Container_ } from './type';
 
-const CONTAINER:Container_ = {
+const CONTAINER = {
   ...GLOBAL,
-  size: size(),
+  size: {
+    all: 'container',
+    sm: 'container-sm',
+    md: 'container-md',
+    lg: 'container-lg',
+    xl: 'container-xl',
+    xxl: 'container-xxl',
+    fluid: 'container-fluid',
+  },
 };
 
 export {
   CONTAINER,
-  type ContainerProps_,
+  type Container_,
 };

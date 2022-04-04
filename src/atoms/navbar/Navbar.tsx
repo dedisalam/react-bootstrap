@@ -1,8 +1,8 @@
 import React from 'react';
-import { NAVBAR, NavbarProps_ } from '../../variables';
+import { NAVBAR, Navbar_ } from '../../variables';
 import { globalProps, globalStyle } from '../global';
 
-export default function Navbar(props:NavbarProps_) {
+export default function Navbar(props: Navbar_): JSX.Element {
   const {
     children, expand, mode,
   } = props;

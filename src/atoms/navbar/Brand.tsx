@@ -1,8 +1,8 @@
 import React from 'react';
-import { NavbarBrandProps_, NAVBAR_BRAND } from '../../variables';
+import { NavbarBrand_, NAVBAR_BRAND } from '../../variables';
 import { globalProps, globalStyle } from '../global';
 
-export default function Brand(props:NavbarBrandProps_) {
+export default function Brand(props: NavbarBrand_): JSX.Element {
   const { children, href } = props;
 
   const localClassName = [];

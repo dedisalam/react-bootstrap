@@ -20,7 +20,7 @@ type BgColor = {
   | '75'
   | '100',
 
-  'gradient': boolean,
+  'gradient'?: boolean,
 };
 
 export default BgColor;
