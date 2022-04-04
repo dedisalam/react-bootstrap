@@ -33,7 +33,13 @@ type Global =
   & BorderRadius_
   & Visibility_
   & {
-    id?: string;
+    children?: React.ReactNode,
+    id?: string,
+    'data-bs-toggle'?: string,
+    'data-bs-target'?: string,
+    'aria-controls'?: string,
+    'aria-expanded'?: string,
+    'aria-label'?: string,
   };
 
 export default Global;

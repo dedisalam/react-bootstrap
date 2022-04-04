@@ -12,11 +12,6 @@ export default function Toggle(props: NavbarToggle_): JSX.Element {
   return React.createElement('button', {
     className: className.join(' '),
     type: 'button',
-    'data-bs-toggle': 'collapse',
-    'data-bs-target': '#navbarSupportedContent',
-    'aria-controls': 'navbarSupportedContent',
-    'aria-expanded': 'false',
-    'aria-label': 'Toggle navigation',
     ...globalProps(props),
   }, children);
 }

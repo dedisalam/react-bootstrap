@@ -33,7 +33,5 @@ const GLOBAL = {
   ...BORDER_RADIUS,
   ...VISIBILITY,
 };
-// eslint-disable-next-line no-console
-console.log(GLOBAL);
 
 export default GLOBAL;

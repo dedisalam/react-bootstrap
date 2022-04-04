@@ -40,8 +40,20 @@ export function globalStyle(props: Global_): string[] {
 }
 
 export function globalProps(props: Global_): Object {
-  const { id } = props;
+  const {
+    id,
+    'data-bs-toggle': dataBsToggle,
+    'data-bs-target': dataBsTarget,
+    'aria-controls': ariaControls,
+    'aria-expanded': ariaExpanded,
+    'aria-label': ariaLabel,
+  } = props;
   return {
     id,
+    'data-bs-toggle': dataBsToggle,
+    'data-bs-target': dataBsTarget,
+    'aria-controls': ariaControls,
+    'aria-expanded': ariaExpanded,
+    'aria-label': ariaLabel,
   };
 }

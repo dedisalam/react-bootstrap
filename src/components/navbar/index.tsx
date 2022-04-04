@@ -6,11 +6,17 @@ import {
 
 function Navbar() {
   return (
-    <NavigationBar expand="lg" mode="dark" background-color="info">
-      <Container margin-end="3" size="fluid">
-        <NavigationBar.Brand>Navbar</NavigationBar.Brand>
-        <NavigationBar.Toggle>
-          <NavigationBar.Toggle.Icon id="test" />
+    <NavigationBar expand="lg" mode="light" background-color="light">
+      <Container size="fluid">
+        <NavigationBar.Brand href="index.html">Navbar</NavigationBar.Brand>
+        <NavigationBar.Toggle
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <NavigationBar.Toggle.Icon />
         </NavigationBar.Toggle>
         <NavigationBar.Collapse id="navbarSupportedContent">
           <NavigationBar.Nav margin-end="auto" margin-bottom="2" margin-bottom-lg="0">

@@ -2,7 +2,6 @@
 import { Global_ } from '../global';
 
 type Container = Global_ & {
-  children?: React.ReactNode;
   size:
   | 'sm'
   | 'md'

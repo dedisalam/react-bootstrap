@@ -4,7 +4,6 @@ import {
 
 // Navbar Type
 type Navbar = Global_ & {
-  children?: React.ReactNode,
   expand:
   | 'sm'
   | 'md'
@@ -22,13 +21,11 @@ type Navbar = Global_ & {
 
 // Navbar Brand Type
 type NavbarBrand = Global_ & {
-  children?: React.ReactNode;
   href?: string;
 };
 
 // Navbar Toggler Type
 type NavbarToggle = Global_ & {
-  children?: React.ReactNode;
 };
 
 // Navbar Toggler Icon Type
@@ -37,12 +34,10 @@ type NavbarToggleIcon = Global_ & {
 
 // Navbar Collapse Type
 type NavbarCollapse = Global_ & {
-  children?: React.ReactNode;
 };
 
 // Navbar Nav Type
 type NavbarNav = Global_ & {
-  children?: React.ReactNode;
 };
 
 export {
