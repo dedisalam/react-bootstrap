@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import {
-  Container, Navbar as NavigationBar,
+  Container, Navbar as NavigationBar, Nav,
 } from '../../atoms';
 
 function Navbar() {
@@ -20,13 +20,13 @@ function Navbar() {
         </NavigationBar.Toggle>
         <NavigationBar.Collapse id="navbarSupportedContent">
           <NavigationBar.Nav margin-end="auto" margin-bottom="2" margin-bottom-lg="0">
-            <li className="nav-item">
+            <Nav.Item>
               <a className="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li className="nav-item">
+            </Nav.Item>
+            <Nav.Item>
               <a className="nav-link" href="#">Link</a>
-            </li>
-            <li className="nav-item dropdown">
+            </Nav.Item>
+            <Nav.Item dropdown>
               <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Dropdown
               </a>
@@ -36,10 +36,10 @@ function Navbar() {
                 <li><hr className="dropdown-divider" /></li>
                 <li><a className="dropdown-item" href="#">Something else here</a></li>
               </ul>
-            </li>
-            <li className="nav-item">
+            </Nav.Item>
+            <Nav.Item>
               <a className="nav-link disabled" href="#" tabIndex={-1} aria-disabled="true">Disabled</a>
-            </li>
+            </Nav.Item>
           </NavigationBar.Nav>
           <form className="d-flex">
             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
