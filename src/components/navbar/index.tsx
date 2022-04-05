@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import {
-  Container, Navbar as NavigationBar, Nav, Form, Dropdown,
+  Container, Navbar as NavigationBar, Nav, Form, Dropdown, Button,
 } from '../../atoms';
 
 function Navbar() {
@@ -41,7 +41,7 @@ function Navbar() {
           </NavigationBar.Nav>
           <Form display="flex">
             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-            <button className="btn btn-outline-success" type="submit">Search</button>
+            <Button outline variant="success" type="submit">Search</Button>
           </Form>
         </NavigationBar.Collapse>
       </Container>

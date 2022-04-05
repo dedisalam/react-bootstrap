@@ -16,7 +16,7 @@ type Navbar = Global_ & {
   | 'dark'
   | 'light',
 
-  'background-color': Exclude<Global_['background-color'], undefined>;
+  'background-color': NonNullable<Global_['background-color']>;
 };
 
 // Navbar Brand Type
