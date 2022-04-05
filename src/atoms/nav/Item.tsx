@@ -4,7 +4,7 @@ import { globalProps, globalStyle } from '../global';
 
 export default function Item(props: NavItem_): JSX.Element {
   const {
-    children, dropdown,
+    children, dropdown, tag,
   } = props;
 
   const localClassName = [];
@@ -14,7 +14,7 @@ export default function Item(props: NavItem_): JSX.Element {
   }
   const className = localClassName.concat(globalStyle(props));
 
-  return React.createElement('li', {
+  return React.createElement(tag, {
     className: className.join(' '),
     ...globalProps(props),
   }, children);
@@ -23,4 +23,5 @@ export default function Item(props: NavItem_): JSX.Element {
 Item.defaultProps = {
   children: null,
   dropdown: false,
+  tag: 'li',
 };

@@ -1,5 +1,6 @@
 import {
   NavItem_,
+  NavLink_,
 } from './type';
 import { GLOBAL } from '../global';
 
@@ -10,7 +11,17 @@ const NAV_ITEM = {
   dropdown: 'dropdown',
 };
 
+// Nav Link variables
+const NAV_LINK = {
+  ...GLOBAL,
+  base: 'nav-link',
+  active: 'active',
+  'dropdown-toggle': 'dropdown-toggle',
+};
+
 export {
   NAV_ITEM,
   type NavItem_,
+  NAV_LINK,
+  type NavLink_,
 };

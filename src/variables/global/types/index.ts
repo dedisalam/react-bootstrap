@@ -35,11 +35,14 @@ type Global =
   & {
     children?: React.ReactNode,
     id?: string,
+    role?: string,
+    tag: 'div' | 'span' | 'a' | 'button' | 'nav' | 'ul' | 'li',
     'data-bs-toggle'?: string,
     'data-bs-target'?: string,
     'aria-controls'?: string,
     'aria-expanded'?: string,
     'aria-label'?: string,
+    'aria-current'?: string,
   };
 
 export default Global;

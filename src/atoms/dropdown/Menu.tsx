@@ -1,13 +1,14 @@
 import React from 'react';
-import { NavbarCollapse_ } from '../../variables';
+import { DROPDOWN_MENU, DropdownMenu_ } from '../../variables';
 import { globalProps, globalStyle } from '../global';
 
-export default function Collapse(props: NavbarCollapse_): JSX.Element {
-  const { children, tag } = props;
+export default function Menu(props: DropdownMenu_): JSX.Element {
+  const {
+    children, tag,
+  } = props;
 
   const localClassName = [];
-  localClassName.push('collapse');
-  localClassName.push('navbar-collapse');
+  localClassName.push(DROPDOWN_MENU.base);
   const className = localClassName.concat(globalStyle(props));
 
   return React.createElement(tag, {
@@ -16,7 +17,7 @@ export default function Collapse(props: NavbarCollapse_): JSX.Element {
   }, children);
 }
 
-Collapse.defaultProps = {
+Menu.defaultProps = {
   children: null,
-  tag: 'div',
+  tag: 'ul',
 };

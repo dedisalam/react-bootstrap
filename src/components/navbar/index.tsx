@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import {
-  Container, Navbar as NavigationBar, Nav,
+  Container, Navbar as NavigationBar, Nav, Form, Dropdown,
 } from '../../atoms';
 
 function Navbar() {
@@ -21,30 +21,28 @@ function Navbar() {
         <NavigationBar.Collapse id="navbarSupportedContent">
           <NavigationBar.Nav margin-end="auto" margin-bottom="2" margin-bottom-lg="0">
             <Nav.Item>
-              <a className="nav-link active" aria-current="page" href="#">Home</a>
+              <Nav.Link active aria-current="page" href="#">Home</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <a className="nav-link" href="#">Link</a>
+              <Nav.Link href="#">Link</Nav.Link>
             </Nav.Item>
             <Nav.Item dropdown>
-              <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+              <Nav.Link dropdown-toggle href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</Nav.Link>
+              <Dropdown.Menu aria-labelledby="navbarDropdown">
                 <li><a className="dropdown-item" href="#">Action</a></li>
                 <li><a className="dropdown-item" href="#">Another action</a></li>
                 <li><hr className="dropdown-divider" /></li>
                 <li><a className="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+              </Dropdown.Menu>
             </Nav.Item>
             <Nav.Item>
               <a className="nav-link disabled" href="#" tabIndex={-1} aria-disabled="true">Disabled</a>
             </Nav.Item>
           </NavigationBar.Nav>
-          <form className="d-flex">
+          <Form display="flex">
             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
             <button className="btn btn-outline-success" type="submit">Search</button>
-          </form>
+          </Form>
         </NavigationBar.Collapse>
       </Container>
     </NavigationBar>

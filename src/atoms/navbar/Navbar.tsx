@@ -4,7 +4,7 @@ import { globalProps, globalStyle } from '../global';
 
 export default function Navbar(props: Navbar_): JSX.Element {
   const {
-    children, expand, mode,
+    children, expand, mode, tag,
   } = props;
 
   const localClassName = [];
@@ -13,7 +13,7 @@ export default function Navbar(props: Navbar_): JSX.Element {
   localClassName.push(NAVBAR.mode[mode]);
   const className = localClassName.concat(globalStyle(props));
 
-  return React.createElement('nav', {
+  return React.createElement(tag, {
     className: className.join(' '),
     ...globalProps(props),
   }, children);
@@ -21,4 +21,5 @@ export default function Navbar(props: Navbar_): JSX.Element {
 
 Navbar.defaultProps = {
   children: null,
+  tag: 'nav',
 };

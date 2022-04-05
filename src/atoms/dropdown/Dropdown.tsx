@@ -1,21 +1,22 @@
 import React from 'react';
-import { NavbarNav_, NAVBAR_NAV } from '../../variables';
+import { DROPDOWN, Dropdown_ } from '../../variables';
 import { globalProps, globalStyle } from '../global';
 
-export default function Nav(props: NavbarNav_): JSX.Element {
-  const { children, tag } = props;
+export default function Dropdown(props: Dropdown_): JSX.Element {
+  const {
+    children,
+  } = props;
 
   const localClassName = [];
-  localClassName.push(NAVBAR_NAV.base);
+  localClassName.push(DROPDOWN.base);
   const className = localClassName.concat(globalStyle(props));
 
-  return React.createElement(tag, {
+  return React.createElement('div', {
     className: className.join(' '),
     ...globalProps(props),
   }, children);
 }
 
-Nav.defaultProps = {
+Dropdown.defaultProps = {
   children: null,
-  tag: 'ul',
 };

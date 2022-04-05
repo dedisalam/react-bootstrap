@@ -1,12 +1,13 @@
 import React from 'react';
-import { NavbarNav_, NAVBAR_NAV } from '../../variables';
+import { Form_ } from '../../variables';
 import { globalProps, globalStyle } from '../global';
 
-export default function Nav(props: NavbarNav_): JSX.Element {
-  const { children, tag } = props;
+export default function Form(props: Form_): JSX.Element {
+  const {
+    children, tag,
+  } = props;
 
-  const localClassName = [];
-  localClassName.push(NAVBAR_NAV.base);
+  const localClassName: string[] = [];
   const className = localClassName.concat(globalStyle(props));
 
   return React.createElement(tag, {
@@ -15,7 +16,7 @@ export default function Nav(props: NavbarNav_): JSX.Element {
   }, children);
 }
 
-Nav.defaultProps = {
+Form.defaultProps = {
   children: null,
-  tag: 'ul',
+  tag: 'form',
 };
