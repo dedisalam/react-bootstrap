@@ -16,6 +16,7 @@ const NAV_LINK = {
   ...GLOBAL,
   base: 'nav-link',
   active: 'active',
+  disabled: 'disabled',
   'dropdown-toggle': 'dropdown-toggle',
 };
 

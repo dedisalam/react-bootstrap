@@ -1,14 +1,12 @@
 import React from 'react';
-import { DROPDOWN, Dropdown_ } from '../../variables';
+import { DropdownDivider_, DROPDOWN_DIVIDER } from '../../variables';
 import { globalProps, globalStyle } from '../global';
 
-export default function Dropdown(props: Dropdown_): JSX.Element {
-  const {
-    children, tag,
-  } = props;
+export default function Divider(props: DropdownDivider_): JSX.Element {
+  const { children, tag } = props;
 
   const localClassName = [];
-  localClassName.push(DROPDOWN.base);
+  localClassName.push(DROPDOWN_DIVIDER.base);
   const className = localClassName.concat(globalStyle(props));
 
   return React.createElement(tag, {
@@ -17,7 +15,7 @@ export default function Dropdown(props: Dropdown_): JSX.Element {
   }, children);
 }
 
-Dropdown.defaultProps = {
+Divider.defaultProps = {
   children: null,
-  tag: 'div',
+  tag: 'hr',
 };

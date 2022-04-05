@@ -29,14 +29,14 @@ function Navbar() {
             <Nav.Item dropdown>
               <Nav.Link dropdown-toggle href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</Nav.Link>
               <Dropdown.Menu aria-labelledby="navbarDropdown">
-                <li><a className="dropdown-item" href="#">Action</a></li>
-                <li><a className="dropdown-item" href="#">Another action</a></li>
-                <li><hr className="dropdown-divider" /></li>
-                <li><a className="dropdown-item" href="#">Something else here</a></li>
+                <li><Dropdown.Item tag="a" href="#">Action</Dropdown.Item></li>
+                <li><Dropdown.Item tag="a" href="#">Another action</Dropdown.Item></li>
+                <li><Dropdown.Divider /></li>
+                <li><Dropdown.Item tag="a" href="#">Something else here</Dropdown.Item></li>
               </Dropdown.Menu>
             </Nav.Item>
             <Nav.Item>
-              <a className="nav-link disabled" href="#" tabIndex={-1} aria-disabled="true">Disabled</a>
+              <Nav.Link disabled href="#" aria-disabled="true">Disabled</Nav.Link>
             </Nav.Item>
           </NavigationBar.Nav>
           <Form display="flex">

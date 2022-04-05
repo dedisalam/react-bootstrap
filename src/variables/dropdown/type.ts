@@ -15,8 +15,13 @@ type DropdownMenu = Global_ & {
 type DropdownItem = Global_ & {
 };
 
+// Dropdown Divider Type
+type DropdownDivider = Global_ & {
+};
+
 export {
   type Dropdown as Dropdown_,
   type DropdownMenu as DropdownMenu_,
   type DropdownItem as DropdownItem_,
+  type DropdownDivider as DropdownDivider_,
 };

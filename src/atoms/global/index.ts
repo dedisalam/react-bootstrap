@@ -42,6 +42,7 @@ export function globalStyle(props: Global_): string[] {
 export function globalProps(props: Global_): Object {
   const {
     id,
+    href,
     role,
     'data-bs-toggle': dataBsToggle,
     'data-bs-target': dataBsTarget,
@@ -52,6 +53,7 @@ export function globalProps(props: Global_): Object {
   } = props;
   return {
     id,
+    href,
     role,
     'data-bs-toggle': dataBsToggle,
     'data-bs-target': dataBsTarget,

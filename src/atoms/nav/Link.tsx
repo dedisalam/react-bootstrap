@@ -4,13 +4,16 @@ import { globalProps, globalStyle } from '../global';
 
 export default function Link(props: NavLink_): JSX.Element {
   const {
-    children, href, active, 'dropdown-toggle': dropdownToggle, tag,
+    children, active, 'dropdown-toggle': dropdownToggle, tag, disabled,
   } = props;
 
   const localClassName = [];
   localClassName.push(NAV_LINK.base);
   if (active) {
     localClassName.push(NAV_LINK.active);
+  }
+  if (disabled) {
+    localClassName.push(NAV_LINK.disabled);
   }
   if (dropdownToggle) {
     localClassName.push(NAV_LINK['dropdown-toggle']);
@@ -20,7 +23,6 @@ export default function Link(props: NavLink_): JSX.Element {
   return React.createElement(tag, {
     className: className.join(' '),
     ...globalProps(props),
-    href,
   }, children);
 }
 

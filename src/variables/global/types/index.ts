@@ -35,8 +35,9 @@ type Global =
   & {
     children?: React.ReactNode,
     id?: string,
+    href?: string,
     role?: string,
-    tag: 'div' | 'span' | 'a' | 'button' | 'nav' | 'ul' | 'li',
+    tag: 'div' | 'span' | 'a' | 'button' | 'nav' | 'ul' | 'li' | 'hr',
     'data-bs-toggle'?: string,
     'data-bs-target'?: string,
     'aria-controls'?: string,

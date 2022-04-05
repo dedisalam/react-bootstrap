@@ -11,6 +11,7 @@ type NavItem = Global_ & {
 type NavLink = Global_ & {
   href?: string;
   active?: boolean;
+  disabled?: boolean;
   'dropdown-toggle'?: boolean;
 };
 

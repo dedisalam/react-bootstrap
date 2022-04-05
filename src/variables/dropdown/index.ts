@@ -2,6 +2,7 @@ import {
   Dropdown_,
   DropdownMenu_,
   DropdownItem_,
+  DropdownDivider_,
 } from './type';
 import { GLOBAL } from '../global';
 
@@ -23,6 +24,12 @@ const DROPDOWN_ITEM = {
   base: 'dropdown-item',
 };
 
+// Dropdown Divider variables
+const DROPDOWN_DIVIDER = {
+  ...GLOBAL,
+  base: 'dropdown-divider',
+};
+
 export {
   DROPDOWN,
   type Dropdown_,
@@ -30,4 +37,6 @@ export {
   type DropdownMenu_,
   DROPDOWN_ITEM,
   type DropdownItem_,
+  DROPDOWN_DIVIDER,
+  type DropdownDivider_,
 };
