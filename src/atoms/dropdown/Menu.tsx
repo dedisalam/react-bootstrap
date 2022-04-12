@@ -1,5 +1,5 @@
 import React from 'react';
-import { DROPDOWN_MENU, DropdownMenu_ } from '../../variables';
+import { DROPDOWN_MENU, DropdownMenu_ } from '../../type';
 import { globalProps, globalStyle } from '../global';
 
 export default function Menu(props: DropdownMenu_): JSX.Element {

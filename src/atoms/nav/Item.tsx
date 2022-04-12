@@ -1,5 +1,5 @@
 import React from 'react';
-import { NAV_ITEM, NavItem_ } from '../../variables';
+import { NAV_ITEM, NavItem_ } from '../../type';
 import { globalProps, globalStyle } from '../global';
 
 export default function Item(props: NavItem_): JSX.Element {

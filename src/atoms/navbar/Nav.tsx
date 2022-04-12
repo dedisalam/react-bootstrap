@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavbarNav_, NAVBAR_NAV } from '../../variables';
+import { NavbarNav_, NAVBAR_NAV } from '../../type';
 import { globalProps, globalStyle } from '../global';
 
 export default function Nav(props: NavbarNav_): JSX.Element {

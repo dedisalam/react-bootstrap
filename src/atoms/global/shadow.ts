@@ -1,4 +1,4 @@
-import { GLOBAL, Global_ } from '../../variables';
+import { GLOBAL, Global_ } from '../../type';
 
 export default function Shadow(props: Global_): string[] {
   const {

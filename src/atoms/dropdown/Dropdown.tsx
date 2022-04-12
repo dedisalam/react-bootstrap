@@ -1,5 +1,5 @@
 import React from 'react';
-import { DROPDOWN, Dropdown_ } from '../../variables';
+import { DROPDOWN, Dropdown_ } from '../../type';
 import { globalProps, globalStyle } from '../global';
 
 export default function Dropdown(props: Dropdown_): JSX.Element {

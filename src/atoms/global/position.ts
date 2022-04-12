@@ -1,4 +1,4 @@
-import { GLOBAL, Global_ } from '../../variables';
+import { GLOBAL, Global_ } from '../../type';
 
 export default function Position(props: Global_): string[] {
   const {

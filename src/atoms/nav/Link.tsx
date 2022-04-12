@@ -1,5 +1,5 @@
 import React from 'react';
-import { NAV_LINK, NavLink_ } from '../../variables';
+import { NAV_LINK, NavLink_ } from '../../type';
 import { globalProps, globalStyle } from '../global';
 
 export default function Link(props: NavLink_): JSX.Element {

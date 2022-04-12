@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavbarToggle_, NAVBAR_TOGGLE } from '../../../variables';
+import { NavbarToggle_, NAVBAR_TOGGLE } from '../../../type';
 import { globalProps, globalStyle } from '../../global';
 
 export default function Toggle(props: NavbarToggle_): JSX.Element {

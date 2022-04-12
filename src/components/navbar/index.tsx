@@ -30,7 +30,7 @@ function Navbar() {
               <Nav.Link dropdown-toggle href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</Nav.Link>
               <Dropdown.Menu aria-labelledby="navbarDropdown">
                 <li><Dropdown.Item tag="a" href="#">Action</Dropdown.Item></li>
-                <li><Dropdown.Item tag="a" href="#">Another action</Dropdown.Item></li>
+                <li><Dropdown.Item tag="button">Another action</Dropdown.Item></li>
                 <li><Dropdown.Divider /></li>
                 <li><Dropdown.Item tag="a" href="#">Something else here</Dropdown.Item></li>
               </Dropdown.Menu>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form_ } from '../../variables';
+import { Form_ } from '../../type';
 import { globalProps, globalStyle } from '../global';
 
 export default function Form(props: Form_): JSX.Element {

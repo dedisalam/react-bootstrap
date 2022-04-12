@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button_, BUTTON } from '../../variables';
+import { Button_, BUTTON } from '../../type';
 import { globalProps, globalStyle } from '../global';
 
 export default function Button(props: Button_): JSX.Element {

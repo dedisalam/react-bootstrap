@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavbarBrand_, NAVBAR_BRAND } from '../../variables';
+import { NavbarBrand_, NAVBAR_BRAND } from '../../type';
 import { globalProps, globalStyle } from '../global';
 
 export default function Brand(props: NavbarBrand_): JSX.Element {

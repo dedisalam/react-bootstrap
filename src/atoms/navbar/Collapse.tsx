@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavbarCollapse_ } from '../../variables';
+import { NavbarCollapse_ } from '../../type';
 import { globalProps, globalStyle } from '../global';
 
 export default function Collapse(props: NavbarCollapse_): JSX.Element {

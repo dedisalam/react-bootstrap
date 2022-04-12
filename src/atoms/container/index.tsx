@@ -1,5 +1,5 @@
 import React from 'react';
-import { CONTAINER, Container_ } from '../../variables';
+import { CONTAINER, Container_ } from '../../type';
 import { globalProps, globalStyle } from '../global';
 
 export default function Container(props: Container_): JSX.Element {

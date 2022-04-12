@@ -1,5 +1,5 @@
 import React from 'react';
-import { DropdownDivider_, DROPDOWN_DIVIDER } from '../../variables';
+import { DropdownDivider_, DROPDOWN_DIVIDER } from '../../type';
 import { globalProps, globalStyle } from '../global';
 
 export default function Divider(props: DropdownDivider_): JSX.Element {
