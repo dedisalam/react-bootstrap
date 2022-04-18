@@ -43,7 +43,7 @@ export const BTN_BORDER_WIDTH = INPUT_BTN_BORDER_WIDTH;
 
 export const BTN_FONT_WEIGHT = FONT_WEIGHT_NORMAL;
 export const BTN_BOX_SHADOW: string = `inset 0 1px 0 rgba(${WHITE}, .15), 0 1px 1px rgba(${BLACK}, .075)`;
-export const BTN_FOCUS_WIDTH = INPUT_BTN_FOCUS_WIDTH;
+export const BTN_FOCUS_WIDTH: number | undefined = INPUT_BTN_FOCUS_WIDTH;
 export const BTN_FOCUS_BOX_SHADOW = INPUT_BTN_FOCUS_BOX_SHADOW;
 export const BTN_DISABLED_OPACITY = 0.65;
 export const BTN_ACTIVE_BOX_SHADOW: string = `inset 0 3px 5px rgba(${BLACK}, .125)`;
@@ -53,7 +53,7 @@ export const BTN_LINK_HOVER_COLOR = LINK_HOVER_COLOR;
 export const BTN_LINK_DISABLED_COLOR = GRAY_600;
 
 // Allows for customizing button radius independently from global border radius
-export const BTN_BORDER_RADIUS = BORDER_RADIUS;
+export const BTN_BORDER_RADIUS: number | undefined = BORDER_RADIUS;
 export const BTN_BORDER_RADIUS_SM = BORDER_RADIUS_SM;
 export const BTN_BORDER_RADIUS_LG = BORDER_RADIUS_LG;
 

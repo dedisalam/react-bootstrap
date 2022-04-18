@@ -1,6 +1,6 @@
 // Tooltips
 
-import { calc } from '../function';
+import { calc } from 'csscalc';
 import { WHITE, BLACK } from './colorSystem';
 import { BORDER_RADIUS } from './component';
 import { SPACER } from './spacing';
@@ -13,8 +13,8 @@ export const TOOLTIP_COLOR = WHITE;
 export const TOOLTIP_BG = BLACK;
 export const TOOLTIP_BORDER_RADIUS = BORDER_RADIUS;
 export const TOOLTIP_OPACITY = 0.9;
-export const TOOLTIP_PADDING_Y = calc(SPACER, '*', 0.25);
-export const TOOLTIP_PADDING_X = calc(SPACER, '*', 0.5);
+export const TOOLTIP_PADDING_Y: number | undefined = calc(`${SPACER} *  0.25`);
+export const TOOLTIP_PADDING_X: number | undefined = calc(`${SPACER} *  0.5`);
 export const TOOLTIP_MARGIN = 0;
 
 export const TOOLTIP_ARROW_WIDTH: string = '.8rem';

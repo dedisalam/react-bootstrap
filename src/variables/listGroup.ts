@@ -1,6 +1,6 @@
 // List group
 
-import { calc } from '../function';
+import { calc } from 'csscalc';
 import { BODY_COLOR } from './body';
 import {
   GRAY_900, WHITE, BLACK, GRAY_100, GRAY_600, GRAY_700, GRAY_200,
@@ -17,7 +17,7 @@ export const LIST_GROUP_BORDER_COLOR: string = `rgba(${BLACK}, .125)`;
 export const LIST_GROUP_BORDER_WIDTH = BORDER_WIDTH;
 export const LIST_GROUP_BORDER_RADIUS = BORDER_RADIUS;
 
-export const LIST_GROUP_ITEM_PADDING_Y = calc(SPACER, '*', 0.5);
+export const LIST_GROUP_ITEM_PADDING_Y: number | undefined = calc(`${SPACER} * 0.5`);
 export const LIST_GROUP_ITEM_PADDING_X = SPACER;
 export const LIST_GROUP_ITEM_BG_SCALE: string = '-80%';
 export const LIST_GROUP_ITEM_COLOR_SCALE: string = '40%';

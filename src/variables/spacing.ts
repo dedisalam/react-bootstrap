@@ -4,10 +4,10 @@
 // variables. Mostly focused on spacing.
 // You can add more entries to the spacers map, should you need more variation.
 
-import { calc } from '../function';
+import { calc } from 'csscalc';
 
 // scss-docs-start spacer-variables-maps
-export const SPACER: string = '1rem';
+export const SPACER: number | undefined = calc('1rem');
 export type Spacers = {
   0: string | number,
   1: string | number,
@@ -18,11 +18,11 @@ export type Spacers = {
 };
 export const SPACERS: Spacers = {
   0: '0',
-  1: calc(SPACER, '*', 0.25),
-  2: calc(SPACER, '*', 0.5),
+  1: calc(`${SPACER} * 0.25`),
+  2: calc(`${SPACER} * 0.5`),
   3: SPACER,
-  4: calc(SPACER, '*', 1.5),
-  5: calc(SPACER, '*', 3),
+  4: calc(`${SPACER} * 1.5`),
+  5: calc(`${SPACER} * 3`),
 };
 
 // negative-spacers: if(enable-negative-margins, negativify-map(spacers), null);

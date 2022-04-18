@@ -1,6 +1,6 @@
 // Forms
 
-import { calc } from '../function';
+import { calc } from 'csscalc';
 import { BODY_BG, BODY_COLOR } from './body';
 import { BTN_DISABLED_OPACITY } from './button';
 import {
@@ -40,15 +40,15 @@ import {
 } from './typography';
 
 // scss-docs-start form-text-variables
-export const FORM_TEXT_MARGIN_TOP: string = '.25rem';
-export const FORM_TEXT_FONT_SIZE = SMALL_FONT_SIZE;
-export const FORM_TEXT_FONT_STYLE = null;
-export const FORM_TEXT_FONT_WEIGHT = null;
-export const FORM_TEXT_COLOR = TEXT_MUTED;
+export const FORM_TEXT_MARGIN_TOP: number | undefined = calc('1rem * 0.25');
+export const FORM_TEXT_FONT_SIZE: string = SMALL_FONT_SIZE;
+export const FORM_TEXT_FONT_STYLE: string | undefined = undefined;
+export const FORM_TEXT_FONT_WEIGHT: number | undefined = undefined;
+export const FORM_TEXT_COLOR: string = TEXT_MUTED;
 // scss-docs-end form-text-variables
 
 // scss-docs-start form-label-variables
-export const FORM_LABEL_MARGIN_BOTTOM: string = '.5rem';
+export const FORM_LABEL_MARGIN_BOTTOM: number | undefined = calc('1rem * 0.5');
 export const FORM_LABEL_FONT_SIZE = null;
 export const FORM_LABEL_FONT_STYLE = null;
 export const FORM_LABEL_FONT_WEIGHT = null;
@@ -93,7 +93,7 @@ export const INPUT_FOCUS_BOX_SHADOW = INPUT_BTN_FOCUS_BOX_SHADOW;
 export const INPUT_PLACEHOLDER_COLOR = GRAY_600;
 export const INPUT_PLAINTEXT_COLOR = BODY_COLOR;
 
-export const INPUT_HEIGHT_BORDER = calc(INPUT_BORDER_WIDTH, '*', 2);
+export const INPUT_HEIGHT_BORDER: number | undefined = calc(`${INPUT_BORDER_WIDTH} * 2`);
 
 export const INPUT_HEIGHT_INNER: string = `add(${INPUT_LINE_HEIGHT} * 1em, ${INPUT_PADDING_Y} * 2)`;
 export const INPUT_HEIGHT_INNER_HALF: string = `add(${INPUT_LINE_HEIGHT} * .5em, ${INPUT_PADDING_Y})`;
@@ -110,7 +110,7 @@ export const FORM_COLOR_WIDTH: string = '3rem';
 
 // scss-docs-start form-check-variables
 export const FORM_CHECK_INPUT_WIDTH: string = '1em';
-export const FORM_CHECK_MIN_HEIGHT = calc(FONT_SIZE_BASE, '*', LINE_HEIGHT_BASE);
+export const FORM_CHECK_MIN_HEIGHT: number | undefined = calc(`${FONT_SIZE_BASE} * ${LINE_HEIGHT_BASE}`);
 export const FORM_CHECK_PADDING_START: string = `${FORM_CHECK_INPUT_WIDTH}.5em`;
 export const FORM_CHECK_MARGIN_BOTTOM: string = '.125rem';
 export const FORM_CHECK_LABEL_COLOR = null;
@@ -175,7 +175,7 @@ export const FORM_SELECT_PADDING_X = INPUT_PADDING_X;
 export const FORM_SELECT_FONT_FAMILY = INPUT_FONT_FAMILY;
 export const FORM_SELECT_FONT_SIZE = INPUT_FONT_SIZE;
 // Extra padding for background-image
-export const FORM_SELECT_INDICATOR_PADDING = calc(FORM_SELECT_PADDING_X, '*', 3);
+export const FORM_SELECT_INDICATOR_PADDING: number | undefined = calc(`${FORM_SELECT_PADDING_X} * 3`);
 export const FORM_SELECT_FONT_WEIGHT = INPUT_FONT_WEIGHT;
 export const FORM_SELECT_LINE_HEIGHT = INPUT_LINE_HEIGHT;
 export const FORM_SELECT_COLOR = INPUT_COLOR;
@@ -188,7 +188,7 @@ export const FORM_SELECT_BG_SIZE: string = '16px 12px'; // In pixels because ima
 export const FORM_SELECT_INDICATOR_COLOR = GRAY_800;
 export const FORM_SELECT_INDICATOR: string = 'url("data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 16 16\'><path fill=\'none\' stroke=\'#{form-select-indicator-color}\' stroke-linecap=\'round\' stroke-linejoin=\'round\' stroke-width=\'2\' d=\'M2 5l6 6 6-6\'/></svg>")';
 
-export const FORM_SELECT_FEEDBACK_ICON_PADDING_END = calc(calc(FORM_SELECT_PADDING_X, '*', 2.5), '+', FORM_SELECT_INDICATOR_PADDING);
+export const FORM_SELECT_FEEDBACK_ICON_PADDING_END: number | undefined = calc(`${FORM_SELECT_PADDING_X} * 2.5 + ${FORM_SELECT_INDICATOR_PADDING}`);
 export const FORM_SELECT_FEEDBACK_ICON_POSITION: string = `center right ${FORM_SELECT_INDICATOR_PADDING}`;
 export const FORM_SELECT_FEEDBACK_ICON_SIZE: string = `${INPUT_HEIGHT_INNER_HALF} ${INPUT_HEIGHT_INNER_HALF}`;
 

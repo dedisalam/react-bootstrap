@@ -24,7 +24,6 @@ const config: Configuration = {
   devServer: {
     open: false,
     host: 'localhost',
-    hot: true,
     historyApiFallback: true,
   },
   plugins: (() => {

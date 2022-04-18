@@ -1,5 +1,6 @@
 // Navs
 
+import { calc } from 'csscalc';
 import { BODY_BG } from './body';
 import {
   GRAY_600, GRAY_300, GRAY_200, GRAY_700,
@@ -10,7 +11,7 @@ import {
 import { LINK_COLOR, LINK_HOVER_COLOR } from './link';
 
 // scss-docs-start nav-variables
-export const NAV_LINK_PADDING_Y: string = '.5rem';
+export const NAV_LINK_PADDING_Y: number = calc('1rem / 2');
 export const NAV_LINK_PADDING_X: string = '1rem';
 export const NAV_LINK_FONT_SIZE = null;
 export const NAV_LINK_FONT_WEIGHT = null;

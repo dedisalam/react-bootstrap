@@ -1,0 +1,6 @@
+Format Document
+
+variable = "UPPERCASE", // CONTOH | CONTOH_KATA
+type = "PascalCase", // Contoh | ContohKata
+Component = "PascalCase", // Contoh | ContohKata
+Function = "camelCase", // contoh | contohKata
