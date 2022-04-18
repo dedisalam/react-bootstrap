@@ -2,36 +2,36 @@
 //
 // Define common padding and border radius sizes and more.
 
-import { calc } from '../function';
+import { calc } from 'csscalc';
 import {
   BLACK, GRAY_300, PRIMARY, WHITE,
 } from './colorSystem';
 
 // scss-docs-start border-variables
-export const BORDER_WIDTH: string = '1px';
+export const BORDER_WIDTH: number = calc('1px');
 export type BorderWidths = {
-  1: string,
-  2: string,
-  3: string,
-  4: string,
-  5: string,
+  1: number,
+  2: number,
+  3: number,
+  4: number,
+  5: number,
 };
 export const BORDER_WIDTHS: BorderWidths = {
-  1: '1px',
-  2: '2px',
-  3: '3px',
-  4: '4px',
-  5: '5px',
+  1: calc('1px'),
+  2: calc('2px'),
+  3: calc('3px'),
+  4: calc('4px'),
+  5: calc('5px'),
 };
 
-export const BORDER_COLOR = GRAY_300;
+export const BORDER_COLOR: string = GRAY_300;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
-export const BORDER_RADIUS: string = '.25rem';
-export const BORDER_RADIUS_SM: string = '.2rem';
-export const BORDER_RADIUS_LG: string = '.3rem';
-export const BORDER_RADIUS_PILL: string = '50rem';
+export const BORDER_RADIUS: number | undefined = calc('1rem / 4');
+export const BORDER_RADIUS_SM: number | undefined = calc('1rem * 0.2');
+export const BORDER_RADIUS_LG: number | undefined = calc('1rem * 0.3');
+export const BORDER_RADIUS_PILL: number | undefined = calc('50rem');
 // scss-docs-end border-radius-variables
 
 // scss-docs-start box-shadow-variables
@@ -41,13 +41,13 @@ export const BOX_SHADOW_LG: string = `0 1rem 3rem rgba(${BLACK}, .175)`;
 export const BOX_SHADOW_INSET: string = `inset 0 1px 2px rgba(${BLACK}, .075)`;
 // scss-docs-end box-shadow-variables
 
-export const COMPONENT_ACTIVE_COLOR = WHITE;
-export const COMPONENT_ACTIVE_BG = PRIMARY;
+export const COMPONENT_ACTIVE_COLOR: string = WHITE;
+export const COMPONENT_ACTIVE_BG: string = PRIMARY;
 
 // scss-docs-start caret-variables
 export const CARET_WIDTH: string = '.3em';
-export const CARET_VERTICAL_ALIGN = calc(CARET_WIDTH, '*', 0.85);
-export const CARET_SPACING = calc(CARET_WIDTH, '*', 0.85);
+export const CARET_VERTICAL_ALIGN: number | undefined = calc(`${CARET_WIDTH} * 0.85`);
+export const CARET_SPACING: number | undefined = calc(`${CARET_WIDTH} * 0.85`);
 // scss-docs-end caret-variables
 
 export const TRANSITION_BASE: string = 'all .2s ease-in-out';
